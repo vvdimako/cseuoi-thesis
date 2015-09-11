@@ -19,6 +19,7 @@ Installation instructions
 Change Log
 ----------
 
+* Replaced the subfigure package with the subcaption package.
 * Modified the title and abstract pages.
 * Changed the structure of the directories.
 * Changed the filenames of the source code.

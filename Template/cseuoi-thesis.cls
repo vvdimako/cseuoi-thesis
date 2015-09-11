@@ -13,6 +13,7 @@
 % Πακέτα για Ελληνικά
 \RequirePackage{fontspec}
 \RequirePackage[noindentfirst]{xgreek}
+
 % Αυτόματη αλλαγή ελληνικού αγγλικού hyphenation
 % http://www.mechpedia.gr/wiki/Hyphenation_-_%CE%A5%CF%86%CE%B5%CE%BD%CF%8E%CF%83%CE%B5%CE%B9%CF%82#xgreek_3
 \RequirePackage[Greek,Latin]{ucharclasses}
@@ -21,6 +22,15 @@
 \setmainfont[Mapping=tex-text]{GFS Didot}
 \setsansfont[Mapping=tex-text]{DejaVuSans}
 \setmonofont[Mapping=tex-text]{FreeMono}
+
+% Packages for figures
+\RequirePackage{graphicx}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+
+% Use Latin numerals instead of Greek numerals
+\nogreekalph
+
 
 %\newcommand{\ps@mythesis}{
 %    \renewcommand{\@oddhead}{\hfill \chaptername \thechapter}

@@ -141,9 +141,10 @@
 
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[scale=1.2]{Figures/bird.eps}
-  \caption{Το λογότυπο του Πανεπιστημίου Ιωαννίνων.}\label{bird}
+	\centering
+	\includegraphics[width=0.125\textwidth]{Figures/bird.eps}
+	\caption{Το λογότυπο του Πανεπιστημίου Ιωαννίνων.}
+	\label{fig:bird}
 \end{figure}
 
 
@@ -171,12 +172,29 @@
 
 
 \begin{figure}[h]
- \centerline{ {\includegraphics[scale=0.9,angle=45]{Figures/bird.eps}}
-              \hskip 0.6in
-              {\includegraphics[scale=0.9]{Figures/bird.eps}}
-              \hskip 0.6in
-              {\includegraphics[scale=0.9,angle=-45]{Figures/bird.eps}} }
- \caption{Τρία σχήματα.}\label{bird2}
+	\centering
+	\begin{subfigure}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.25\textwidth]{Figures/bird.eps}
+		\caption{}
+		\label{subfig:ThreeBirdsA}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.25\textwidth]{Figures/bird.eps}
+		\caption{}
+		\label{subfig:ThreeBirdsB}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=0.25\textwidth]{Figures/bird.eps}
+		\caption{}
+		\label{subfig:ThreeBirdsC}
+	\end{subfigure}
+	\caption{Τρία σχήματα.}
+	\label{fig:ThreeBirds}
 \end{figure}
 
 

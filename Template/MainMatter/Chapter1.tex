@@ -34,14 +34,23 @@
 
 
 \newpage
-Το Σχήμα~\ref{fig1} δείχνει το Πρώτο Σχήμα του Πρώτου Κεφαλαίου.
+Το Σχήμα~\ref{fig:TwoBirds} δείχνει το Πρώτο Σχήμα του Πρώτου Κεφαλαίου.
 
 \begin{figure}[t]
- \centerline{ {\includegraphics[scale=0.9]{Figures/bird.eps}}
-              \hskip 2.3in
-              {\includegraphics[scale=0.9]{Figures/bird.eps}}}
- \centerline{(a) \hskip 2.5in (b) \hskip 0.1in}
- \centering
- \vspace{0.0cm}
- \caption{(a)~Ένα Σχήμα\  και \  (b)~δίπλα ένα άλλο Σχήμα.}\label{fig1}
+	\centering
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[width=0.25\textwidth]{Figures/bird.eps}
+		\caption{}
+		\label{subfig:TwoBirdsA}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[width=0.25\textwidth]{Figures/bird.eps}
+		\caption{}
+		\label{subfig:TwoBirdsB}
+	\end{subfigure}
+	\caption{Το σχήμα (a) είναι δίπλα στο σχήμα (b).}
+	\label{fig:TwoBirds}
 \end{figure}

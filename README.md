@@ -14,3 +14,10 @@ Installation instructions
 2. Install a TeX editor such as TeXstudio.
 
 3. Open the Sample_PhD-eng.tex file with your TeX editor and compile it with XeLaTeX.
+
+
+Change Log
+----------
+
+* Replaced the greektex package with the xgreek package.
+* Deleted unnecessary files.

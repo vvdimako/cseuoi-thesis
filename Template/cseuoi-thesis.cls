@@ -3,9 +3,9 @@
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 
-\ProcessOptions
+\ProcessOptions\relax
 
-\LoadClass[12pt,a4paper,oneside]{report}
+\LoadClass[a4paper,oneside]{report}
 
 % Περιθώρια σελίδας
 \RequirePackage[nohead, top=2.5cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
@@ -18,10 +18,6 @@
 % http://www.mechpedia.gr/wiki/Hyphenation_-_%CE%A5%CF%86%CE%B5%CE%BD%CF%8E%CF%83%CE%B5%CE%B9%CF%82#xgreek_3
 \RequirePackage[Greek,Latin]{ucharclasses}
 \setTransitionsForGreek{\setlanguage{greek}}{\setlanguage{english}}
-
-\setmainfont[Mapping=tex-text]{GFS Didot}
-\setsansfont[Mapping=tex-text]{DejaVuSans}
-\setmonofont[Mapping=tex-text]{FreeMono}
 
 % Packages for figures
 \RequirePackage{graphicx}

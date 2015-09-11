@@ -13,12 +13,13 @@ Installation instructions
 
 2. Install a TeX editor such as TeXstudio.
 
-3. Open the Sample_PhD-eng.tex file with your TeX editor and compile it with XeLaTeX.
+3. Open the SampleThesis.tex file with your TeX editor and compile it with XeLaTeX.
 
 
 Change Log
 ----------
 
+* Changed the structure of the directories.
 * Changed the filenames of the source code.
 * Replaced the greektex package with the xgreek package.
 * Deleted unnecessary files.

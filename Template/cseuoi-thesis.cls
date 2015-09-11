@@ -1,6 +1,14 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cseuoi-thesis}[2015/09/11 v1.0.0 Official MSc and PhD (Xe)LaTeX thesis template for the CSE Department, University of Ioannina]
 
+% Master ή PhD
+\newif\ifPhD
+\DeclareOption{Master}{\PhDfalse}
+\DeclareOption{PhD}{\PhDtrue}
+
+% Από default PhD
+\ExecuteOptions{PhD}
+
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 
 \ProcessOptions\relax
@@ -27,6 +35,17 @@
 % Use Latin numerals instead of Greek numerals
 \nogreekalph
 
+\ifPhD
+	\newcommand{\csethesisTypeEl}{ΔΙΔΑΚΤΟΡΙΚΗ ΔΙΑΤΡΙΒΗ}
+	\newcommand{\csediplwmaEl}{ΔΙΔΑΚΤΟΡΙΚΟΥ ΔΙΠΛΩΜΑΤΟΣ}
+	\newcommand{\csethesisTypeEn}{PhD DISSERTATION}
+	\newcommand{\csediplwmaEn}{PhD} % TODO
+\else
+	\newcommand{\csethesisTypeEl}{ΜΕΤΑΠΤΥΧΙΑΚΗ ΕΡΓΑΣΙΑ ΕΞΕΙΔΙΚΕΥΣΗΣ}
+	\newcommand{\csediplwmaEl}{ΜΕΤΑΠΤΥΧΙΑΚΟΥ ΔΙΠΛΩΜΑΤΟΣ ΕΙΔΙΚΕΥΣΗΣ}
+	\newcommand{\csethesisTypeEn}{MASTER THESIS}
+	\newcommand{\csediplwmaEn}{MASTER OF SCIENCE}
+\fi
 
 %\newcommand{\ps@mythesis}{
 %    \renewcommand{\@oddhead}{\hfill \chaptername \thechapter}

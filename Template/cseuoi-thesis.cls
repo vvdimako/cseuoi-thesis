@@ -1,11 +1,5 @@
-% This is an example of how to modify the style of your
-% thesis.  Check the guidelines for your school/university
-% on the required format for a PhD thesis.
-
-% First identify the class:
-
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mythesis}
+\ProvidesClass{cseuoi-thesis}[2015/09/11 v1.0.0 Official MSc and PhD (Xe)LaTeX thesis template for the CSE Department, University of Ioannina]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 

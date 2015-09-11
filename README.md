@@ -19,5 +19,6 @@ Installation instructions
 Change Log
 ----------
 
+* Changed the filenames of the source code.
 * Replaced the greektex package with the xgreek package.
 * Deleted unnecessary files.

@@ -1,0 +1,206 @@
+\documentclass[a4paper]{mythesis}
+\usepackage{psfrag}
+\usepackage{pst-all}
+\usepackage{pst-node,pstricks}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{caption2}
+\usepackage[dvips]{graphicx}
+\usepackage{makeidx}
+\usepackage[noend]{algorithmic}
+\usepackage[plain]{algorithm}
+\usepackage{subfigure}
+\usepackage[nohead, top=2.5cm, bottom=3cm, left=2.5cm,
+right=2.5cm]{geometry}
+
+
+
+\renewcommand{\chaptername}{Κεφάλαιο}
+\renewcommand{\abstractname}{Περίληψη}
+\renewcommand{\listfigurename}{Ευρετήριο Σχημάτων}
+\renewcommand{\listtablename}{Ευρετήριο Πινάκων}
+\renewcommand{\bibname}{Βιβλιογραφία}
+\renewcommand{\figurename}{Σχήμα}
+\renewcommand{\tablename}{Πίνακας}
+\renewcommand{\indexname}{Ευρετήριο}
+\renewcommand{\contentsname}{Περιεχόμενα}
+\floatname{algorithm}{Αλγόριθμος}
+
+
+\theoremstyle{plain}   % definition, remark
+\newtheorem{theorem}{Θεώρημα}[chapter]
+
+\theoremstyle{plain}   % definition, remark
+\newtheorem{lemma}{Λήμμα}[chapter]
+
+\theoremstyle{plain}   % definition, remark
+\newtheorem{corollary}{Πόρισμα}[chapter]
+
+\theoremstyle{plain}   % definition, remark
+\newtheorem{fact}{Γεγονός}[chapter]
+
+\theoremstyle{definition}  % definition, remark
+\newtheorem{remark}{Σημείωση}[chapter]
+
+\theoremstyle{definition}  % definition, remark
+\newtheorem{definition}{Ορισμός}[chapter]
+
+\theoremstyle{plain}  % definition, remark
+\newtheorem{observation}{Παρατήρηση}[chapter]
+
+
+\renewcommand{\baselinestretch}{1.14}   %typical: 1.66
+
+
+%%%%%%%%%%%% Some spaces %%%%%%%%%%%%%%%%%%%%%
+\def\yskip{\penalty-50\vskip3pt plus3pt minus2pt}
+\def\y{\yskip}
+\def\yy{\yskip\yskip}
+\def\yyy{\yskip\yskip\yskip}
+\def\qed{\hskip 3pt\vrule height 6pt width 3pt depth 0pt}
+\def\q5uad{\quad\quad\quad\quad\quad}
+
+\def\mytab{\phantom{xxxx}}
+
+\def\myhang{\par\yskip\hangindent21pt}
+\def\mynoindent{\par\yskip}
+\def\chl{\yyy\y\par\noindent}
+% End Spaces,Paragraphs...
+
+% Begin Tabs
+\def\s{\ }
+\def\ss{\ \ }
+\def\sss{\ \ \ }
+\def\ssss{\ \ \ \ }
+\def\bs{\ssss \s}
+\def\Bs{\bs \bs}
+\def\BBs{\Bs \Bs}
+% End Tabs
+
+%%%%%%%%%%% ano teleia
+%\def\xano{$\rput(-0.04,0.14){\cnode*{0.021}{a}}$\s}
+\def\xano{$\rput(-0.05,0.14){.}$\s}
+
+%%%%%%%%%% kiklos me text
+\newcommand\kreis[1]{\ensuremath{\mathbin{\settowidth{\dimen7}{\mbox{$\bigcirc$}}%
+              \makebox[0pt][l]{$\bigcirc$}\makebox[\dimen7]{#1}}}}
+
+%%%%%%%%% Euretirio oron
+\makeindex
+
+
+
+
+
+
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\vspace*{0.5in} {\LARGE Τίτλος Διατριβής}
+\par
+\vspace{1in} {\Large Η
+ ΜΕΤΑΠΤΥΧΙΑΚΗ ΕΡΓΑΣΙΑ ΕΞΕΙΔΙΚΕΥΣΗΣ}
+
+\vspace{0.5in} {\Large υποβάλλεται στην}
+
+\vspace{0.2in} {\Large ορισθείσα από την Γενική Συνέλευση Ειδικής
+Σύνθεσης}
+
+\vspace{0.2in} {\Large του Τμήματος Πληροφορικής Εξεταστική
+Επιτροπή}
+
+\vspace{0.5in} {\Large από τον }
+
+\vspace{0.7in} {\LARGE Ονομα Επώνυμο}
+
+\vspace{0.5in} {\Large ως μέρος των Υποχρεώσεων για τη λήψη του}
+
+\vspace{0.7in} {\Large ΜΕΤΑΠΤΥΧΙΑΚΟΥ ΔΙΠΛΩΜΑΤΟΣ ΣΤΗΝ ΠΛΗΡΟΦΟΡΙΚΗ}
+
+\vspace{0.2in} {\Large ΜΕ ΕΞΕΙΔΙΚΕΥΣΗ}
+
+\vspace{0.2in} {\Large ΣΤΗΝ ΘΕΩΡΙΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ }
+\par
+\vspace{1.4in} {\Large Μήνας Αποφοίτησης Έτος Αποφοίτησης}
+\par\vspace{0.6in}
+\end{center}
+
+
+\newpage
+\thispagestyle{empty}
+\begin{center}
+\vspace*{0.5in} {\LARGE Τίτλος Διατριβής}
+\par
+\vspace{1in} {\Large Η ΔΙΔΑΚΤΟΡΙΚΗ ΔΙΑΤΡΙΒΗ}
+
+\vspace{0.5in} {\Large υποβάλλεται στην}
+
+\vspace{0.2in} {\Large ορισθείσα από την Γενική Συνέλευση Ειδικής
+Σύνθεσης}
+
+\vspace{0.2in} {\Large του Τμήματος Πληροφορικής Εξεταστική
+Επιτροπή}
+
+\vspace{0.5in} {\Large από τον }
+
+\vspace{0.7in} {\LARGE Ονομα Επώνυμο}
+
+\vspace{0.5in} {\Large ως μέρος των Υποχρεώσεων για τη λήψη του}
+
+\vspace{0.7in} {\Large ΔΙΔΑΚΤΟΡΙΚΟΥ ΔΙΠΛΩΜΑΤΟΣ ΣΤΗΝ ΠΛΗΡΟΦΟΡΙΚΗ}
+
+\par
+\vspace{2.2in} {\Large Μήνας Αποφοίτησης Έτος Αποφοίτησης}
+\par\vspace{0.6in}
+\end{center}
+\thispagestyle{empty}
+\end{titlepage}
+
+
+%%\pagestyle{mythesis}
+
+\include{Dedication/Dedication}
+
+\include{Thanks/Thanks}
+
+\pagenumbering{roman}
+
+%\pagenumbering{roman}
+
+\tableofcontents
+
+\listoffigures
+
+%\addcontentsline{toc}{Chapter}{\listfigurename}
+
+\listoftables
+
+%\addcontentsline{toc}{Chapter}{\listtablename}
+
+\listof{algorithm}{Ευρετήριο Αλγορίθμων}
+
+%\thispagestyle{empty}
+
+\include{Notation/Notation}
+
+\include{abstract/Abstract}
+
+\include{abstract_en/Abstract_en}
+
+\include{Chap1/Chap1}
+
+\include{Chap2/Chap2}
+
+\include{References/References}
+
+\include{Appendix/Appendix}
+
+\printindex
+
+\pagenumbering{none}
+\include{CV/CV}
+
+\end{document}

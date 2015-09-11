@@ -28,7 +28,6 @@
 \setTransitionsForGreek{\setlanguage{greek}}{\setlanguage{english}}
 
 % Packages for figures
-\RequirePackage{graphicx}
 \RequirePackage{caption}
 \RequirePackage{subcaption}
 

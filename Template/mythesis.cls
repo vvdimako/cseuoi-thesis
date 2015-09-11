@@ -11,8 +11,17 @@
 
 \ProcessOptions
 
-\LoadClass{report}
+\LoadClass[12pt,a4paper,oneside]{report}
 
+\RequirePackage[nohead, top=2.5cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+\RequirePackage[cm-default]{fontspec}
+\RequirePackage{xunicode}
+\RequirePackage{xltxtra}
+\RequirePackage[noindentfirst]{xgreek}
+
+\setmainfont[Mapping=tex-text]{GFS Didot}
+\setsansfont[Mapping=tex-text]{DejaVuSans}
+\setmonofont[Mapping=tex-text]{FreeMono}
 
 %\newcommand{\ps@mythesis}{
 %    \renewcommand{\@oddhead}{\hfill \chaptername \thechapter}

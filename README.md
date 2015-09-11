@@ -19,6 +19,7 @@ Installation instructions
 Change Log
 ----------
 
+* Modified the title and abstract pages.
 * Changed the structure of the directories.
 * Changed the filenames of the source code.
 * Replaced the greektex package with the xgreek package.

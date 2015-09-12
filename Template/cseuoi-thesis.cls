@@ -141,6 +141,7 @@
 \fi
 
 \newcommand{\Arthro}[1]{\def\@Arthro{#1}}
+\newcommand{\Ekseidikseusi}[1]{\def\@Ekseidikseusi{#1}}
 
 % Δημιουργία τίτλου
 \renewcommand{\maketitle}{

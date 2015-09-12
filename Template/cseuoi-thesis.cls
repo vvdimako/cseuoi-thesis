@@ -131,12 +131,20 @@
 \ifPhD
 	\newcommand{\csethesisTypeEl}{ΔΙΔΑΚΤΟΡΙΚΗ ΔΙΑΤΡΙΒΗ}
 	\newcommand{\csediplwmaEl}{ΔΙΔΑΚΤΟΡΙΚΟΥ ΔΙΠΛΩΜΑΤΟΣ}
+	\newcommand{\csesubjectEl}{ΣΤΗΝ ΠΛΗΡΟΦΟΡΙΚΗ}
+	\newcommand{\cseexpertiseEl}{}
 	\newcommand{\csethesisTypeEn}{PhD DISSERTATION}
+	\newcommand{\csesubjectEn}{IN COMPUTER SCIENCE}
+	\newcommand{\cseexpertiseEn}{}
 	\newcommand{\csediplwmaEn}{PhD} % TODO
 \else
 	\newcommand{\csethesisTypeEl}{ΜΕΤΑΠΤΥΧΙΑΚΗ ΕΡΓΑΣΙΑ ΕΞΕΙΔΙΚΕΥΣΗΣ}
 	\newcommand{\csediplwmaEl}{ΜΕΤΑΠΤΥΧΙΑΚΟΥ ΔΙΠΛΩΜΑΤΟΣ ΕΙΔΙΚΕΥΣΗΣ}
+	\newcommand{\csesubjectEl}{ΣΤΗΝ ΠΛΗΡΟΦΟΡΙΚΗ ΜΕ ΕΞΕΙΔΙΚΕΥΣΗ}
+	\newcommand{\cseexpertiseEl}{ΣΤΑ ΥΠΟΛΟΓΙΣΤΙΚΑ ΣΥΣΤΗΜΑΤΑ}
 	\newcommand{\csethesisTypeEn}{MASTER THESIS}
+	\newcommand{\csesubjectEn}{IN COMPUTER SCIENCE WITH EXPERTISE}
+	\newcommand{\cseexpertiseEn}{IN COMPUTER SYSTEMS}
 	\newcommand{\csediplwmaEn}{MASTER OF SCIENCE}
 \fi
 

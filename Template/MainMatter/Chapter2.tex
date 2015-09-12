@@ -109,69 +109,85 @@
 \section{Σχήματα, Πίνακες και Εξισώσεις}
 \label{sec:2.4}
 
-\subsection{Σχήματα} \label{sec:2.4.1}
-Τα σχήματα είναι πάντα κεντραρισμένα και εντός των περιθωρίων του
-κειμένου.
+\subsection{Σχήματα}
+\label{sec:2.4.1}
 
-\chl Τα σχήματα και οι εικόνες είναι μέσα στα περιθώρια και η
-λεζάντα είναι κεντραρισμένη και έχει τίτλο:
+Τα σχήματα και οι λεζάντες τους πρέπει να είναι πάντα κεντραρισμένα και εντός των περιθωρίων του κειμένου.
+Για να εισάγουμε ένα σχήμα στο κείμενο, χρησιμοποιούμε τις παρακάτω εντολές:
 
-\chl Σχήμα $\sharp$κεφαλαίου.$\sharp$σχήματος
+\noindent \verb$\begin{figure}[t]$
 
-\chl και μετά ακολουθεί Περιεχόμενό της με Κεφαλαία στο Πρώτο
-γράμμα σε Ουσιαστικά, Ρήματα και Επίθετα.
+\noindent \bs \verb$\centering$
 
-\chl Η αναφορά σε ένα σχήμα γίνεται με τον εξής τρόπο: Στο Σχήμα
-1.1 βλέπουμε ένα παράδειγμα.
+\noindent \bs \verb$\includegraphics[width=0.125\textwidth]{Figures/bird.eps}$
 
-\chl Για LATEX:
+\noindent \bs \verb$\caption{Το λογότυπο του Πανεπιστημίου Ιωαννίνων.}$
 
-%\begin{minipage}[c]{1.5in}
-\noindent\verb"\begin{figure}[h]"
+\noindent \bs \verb$\label{fig:bird}$
 
-\noindent \bs\s \verb"\centering"
+\noindent \verb$\end{figure}$
 
-\noindent \bs\s \verb"\includegraphics[scale=1.2]{Figures/bird.eps}"
-
-\noindent \bs\s \verb"\caption{Το λογότυπο του Πανεπιστημίου"
-\verb"Ιωαννίνων.}\label{bird}"
-
-\noindent \verb"\end{figure}"
-%\end{minipage}
-
-
-\begin{figure}[h]
+\begin{figure}[t]
 	\centering
 	\includegraphics[width=0.125\textwidth]{Figures/bird.eps}
 	\caption{Το λογότυπο του Πανεπιστημίου Ιωαννίνων.}
 	\label{fig:bird}
 \end{figure}
 
+Το αποτέλεσμα των παραπάνω εντολών φαίνεται στο Σχήμα~\ref{fig:bird}, ενώ σε περίπτωση που θέλουμε να αναφερθούμε σε αυτό μέσα στο κείμενο, χρησιμοποιούμε την εντολή \verb$Σχήμα~\ref{fig:bird}$.
+Αν θέλουμε να εισάγουμε σε ένα σχήμα πολλές εικόνες μαζί, τότε χρησιμοποιούμε τις παρακάτω εντολές:
 
-\chl Για σχήματα το ένα δίπλα στο άλλο:
+\noindent \verb$\begin{figure}[t]$
 
-\noindent\verb"\begin{figure}[h]"
+\noindent \bs \verb$\centering$
 
-\noindent\bs\verb"\centerline{"
+\noindent \bs \verb$\begin{subfigure}[t]{0.3\textwidth}$
 
-\noindent\bs\s\s\verb"{\includegraphics[scale=0.9,angle=45]{Figures/bird.eps}}"
+\noindent \bs\bs \verb$\centering$
 
-\noindent\bs\s\s\verb"\hskip 0.6in"
+\noindent \bs\bs \verb$\includegraphics[width=0.25\textwidth]{Figures/bird.eps}$
 
-\noindent\bs\s\s\verb"{\includegraphics[scale=0.9]{Figures/bird.eps}}"
+\noindent \bs\bs \verb$\caption{}$
 
-\noindent\bs\s\s\verb"\hskip 0.6in"
+\noindent \bs\bs \verb$\label{subfig:ThreeBirdsA}$
 
-\noindent\bs\s\s\verb"{\includegraphics[scale=0.9,angle=-45]{Figures/bird.eps}}"
+\noindent \bs \verb$\end{subfigure}$
 
-\noindent\bs\verb"}"
+\noindent \bs \verb$\hfill$
 
-\noindent\bs\verb"\caption{Τρία σχήματα.}\label{bird2}"
+\noindent \bs \verb$\begin{subfigure}[t]{0.3\textwidth}$
 
-\noindent\verb"\end{figure}"
+\noindent \bs\bs \verb$\centering$
 
+\noindent \bs\bs \verb$\includegraphics[width=0.25\textwidth]{Figures/bird.eps}$
 
-\begin{figure}[h]
+\noindent \bs\bs \verb$\caption{}$
+
+\noindent \bs\bs \verb$\label{subfig:ThreeBirdsB}$
+
+\noindent \bs \verb$\end{subfigure}$
+
+\noindent \bs \verb$\hfill$
+
+\noindent \bs \verb$\begin{subfigure}[t]{0.3\textwidth}$
+
+\noindent \bs\bs \verb$\centering$
+
+\noindent \bs\bs \verb$\includegraphics[width=0.25\textwidth]{Figures/bird.eps}$
+
+\noindent \bs\bs \verb$\caption{}$
+
+\noindent \bs\bs \verb$\label{subfig:ThreeBirdsC}$
+
+\noindent \bs \verb$\end{subfigure}$
+
+\noindent \bs \verb$\caption{Τρεις εικόνες.}$
+
+\noindent \bs \verb$\label{fig:ThreeBirds}$
+
+\noindent \verb$\end{figure}$
+
+\begin{figure}[t]
 	\centering
 	\begin{subfigure}[t]{0.3\textwidth}
 		\centering
@@ -193,18 +209,11 @@
 		\caption{}
 		\label{subfig:ThreeBirdsC}
 	\end{subfigure}
-	\caption{Τρία σχήματα.}
+	\caption{Τρεις εικόνες.}
 	\label{fig:ThreeBirds}
 \end{figure}
 
-
-\chl Επίσης μπορείτε να χρησιμοποιήσετε οποιαδήποτε άλλη εντολή
-όπως:
-
-\chl \verb"\begin{minipage} .... \end{minipage}"
-
-\chl ή κάποιο συγκεκριμένο αρχείο style όπως: \s
-\verb"subfigure.cls"
+Με τις παραπάνω εντολές εισάγαμε στο Σχήμα~\ref{fig:ThreeBirds} τρεις εικόνες, στις οποίες μπορούμε να αναφερθούμε και ξεχωριστά στη καθεμία αν θέλουμε, χρησιμοποιώντας τις αντίστοιχες ετικέτες που τους αναθέσαμε.
 
 
 \subsection{Πίνακες} \label{sec:2.4.2}

@@ -140,6 +140,9 @@
 	\newcommand{\csediplwmaEn}{MASTER OF SCIENCE}
 \fi
 
+% Διάστιχο 
+\renewcommand{\baselinestretch}{1.3}
+
 %\newcommand{\ps@mythesis}{
 %    \renewcommand{\@oddhead}{\hfill \chaptername \thechapter}
 %    \renewcommand{\@evenhead}{\chaptername \thechapter \hfill}

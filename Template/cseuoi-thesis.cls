@@ -1,15 +1,20 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cseuoi-thesis}[2015/09/11 v1.0.0 Official MSc and PhD (Xe)LaTeX thesis template for the CSE Department, University of Ioannina]
 
+% Ελληνικά ή αγγλικά
+\newif\ifgreek
+\DeclareOption{English}{\greekfalse}
+\DeclareOption{Greek}{\greektrue}
+
 % Master ή PhD
 \newif\ifPhD
 \DeclareOption{Master}{\PhDfalse}
 \DeclareOption{PhD}{\PhDtrue}
 
-% Από default PhD
-\ExecuteOptions{PhD}
-
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
+
+% Από default Ελληνικά και PhD
+\ExecuteOptions{Greek,PhD}
 
 \ProcessOptions\relax
 
@@ -33,6 +38,95 @@
 
 % Use Latin numerals instead of Greek numerals
 \nogreekalph
+
+\ifgreek
+	\newcommand{\cseafierwsi}{Αφιέρωση}
+	\newcommand{\cseeuxaristies}{Ευχαριστίες}
+	\newcommand{\csesymvolismoi}{Επεξηγήσεις Συμβολισμών}
+	\newcommand{\csedimosieuseis}{Δημοσιεύσεις}
+	\newcommand{\cseviografiko}{Βιογραφικό}
+	\newcommand{\cseparartima}{Παράρτημα}
+
+	% xgreek
+	%\renewcommand{\chaptername}{Κεφάλαιο}
+	%\renewcommand{\abstractname}{Περίληψη}
+	\renewcommand{\listfigurename}{Ευρετήριο Σχημάτων}
+	\renewcommand{\listtablename}{Ευρετήριο Πινάκων}
+	%\renewcommand{\bibname}{Βιβλιογραφία}
+	%\renewcommand{\figurename}{Σχήμα}
+	%\renewcommand{\tablename}{Πίνακας}
+	%\renewcommand{\indexname}{Ευρετήριο}
+	%\renewcommand{\contentsname}{Περιεχόμενα}
+	%\floatname{algorithm}{Αλγόριθμος}
+
+	\iffalse
+		% amsthm
+		\theoremstyle{plain}   % definition, remark
+		\newtheorem{theorem}{Θεώρημα}[chapter]
+
+		\theoremstyle{plain}   % definition, remark
+		\newtheorem{lemma}{Λήμμα}[chapter]
+
+		\theoremstyle{plain}   % definition, remark
+		\newtheorem{corollary}{Πόρισμα}[chapter]
+
+		\theoremstyle{plain}   % definition, remark
+		\newtheorem{fact}{Γεγονός}[chapter]
+
+		\theoremstyle{definition}  % definition, remark
+		\newtheorem{remark}{Σημείωση}[chapter]
+
+		\theoremstyle{definition}  % definition, remark
+		\newtheorem{definition}{Ορισμός}[chapter]
+
+		\theoremstyle{plain}  % definition, remark
+		\newtheorem{observation}{Παρατήρηση}[chapter]
+	\fi
+\else
+	\newcommand{\cseafierwsi}{Dedication}
+	\newcommand{\cseeuxaristies}{Acknowledgements}
+	\newcommand{\csesymvolismoi}{Glossary}
+	\newcommand{\csedimosieuseis}{Author's Publications}
+	\newcommand{\cseviografiko}{Short Vita}
+	\newcommand{\cseparartima}{Appendix}
+
+	% xgreek
+	\renewcommand{\chaptername}{Chapter}
+	\renewcommand{\abstractname}{Abstract}
+	\renewcommand{\listfigurename}{List of Figures}
+	\renewcommand{\listtablename}{List of Tables}
+	\renewcommand{\bibname}{Bibliography}
+	\renewcommand{\figurename}{Figure}
+	\renewcommand{\tablename}{Table}
+	\renewcommand{\indexname}{Index}
+	\renewcommand{\contentsname}{Table of Contents}
+	%\floatname{algorithm}{Algorithm}
+
+	\iffalse
+		% amsthm
+		\theoremstyle{plain}   % definition, remark
+		\newtheorem{theorem}{Theorem}[chapter]
+
+		\theoremstyle{plain}   % definition, remark
+		\newtheorem{lemma}{Lemma}[chapter]
+
+		\theoremstyle{plain}   % definition, remark
+		\newtheorem{corollary}{Corollary}[chapter]
+
+
+		\theoremstyle{plain}   % definition, remark
+		\newtheorem{fact}{Fact}[chapter]
+
+		\theoremstyle{definition}  % definition, remark
+		\newtheorem{remark}{Note}[chapter]
+
+		\theoremstyle{definition}  % definition, remark
+		\newtheorem{definition}{Definition}[chapter]
+
+		\theoremstyle{plain}  % definition, remark
+		\newtheorem{observation}{Observation}[chapter]
+	\fi
+\fi
 
 \ifPhD
 	\newcommand{\csethesisTypeEl}{ΔΙΔΑΚΤΟΡΙΚΗ ΔΙΑΤΡΙΒΗ}

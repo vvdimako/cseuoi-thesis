@@ -140,6 +140,8 @@
 	\newcommand{\csediplwmaEn}{MASTER OF SCIENCE}
 \fi
 
+\newcommand{\Arthro}[1]{\def\@Arthro{#1}}
+
 % Δημιουργία τίτλου
 \renewcommand{\maketitle}{
 	\begin{center}

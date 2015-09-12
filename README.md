@@ -19,6 +19,7 @@ Installation instructions
 Change Log
 ----------
 
+* Added support for BibTeX references.
 * Replaced the subfigure package with the subcaption package.
 * Modified the title and abstract pages.
 * Changed the structure of the directories.

@@ -140,6 +140,19 @@
 	\newcommand{\csediplwmaEn}{MASTER OF SCIENCE}
 \fi
 
+% Δημιουργία τίτλου
+\renewcommand{\maketitle}{
+	\begin{center}
+		\ifgreek
+			\input{FrontMatter/GreekTitlePage}
+			%\input{FrontMatter/EnglishTitlePage}
+		\else
+			\input{FrontMatter/EnglishTitlePage}
+			%\input{FrontMatter/GreekTitlePage}
+		\fi
+	\end{center}
+}
+
 % Διάστιχο 
 \renewcommand{\baselinestretch}{1.3}
 

@@ -25,7 +25,7 @@
 
 % Πακέτα για Ελληνικά
 \RequirePackage{fontspec}
-\RequirePackage[noindentfirst]{xgreek}
+\RequirePackage[noindentfirst,nonumeralsign]{xgreek}
 
 % Αυτόματη αλλαγή ελληνικού αγγλικού hyphenation
 % http://www.mechpedia.gr/wiki/Hyphenation_-_%CE%A5%CF%86%CE%B5%CE%BD%CF%8E%CF%83%CE%B5%CE%B9%CF%82#xgreek_3
@@ -50,8 +50,6 @@
 %\mtcsettitle{minitoc}{Description of contents}
 \nomtcpagenumbers  % remove page numbers from minitocs
 
-% Use Latin numerals instead of Greek numerals
-\nogreekalph
 
 \ifgreek
 	\newcommand{\cseafierwsi}{Αφιέρωση}
@@ -95,6 +93,9 @@
 	\theoremstyle{plain}  % definition, remark
 	\newtheorem{observation}{Παρατήρηση}[chapter]
 \else
+	% Use Latin numerals instead of Greek numerals
+	\nogreekalph
+	
 	\newcommand{\cseafierwsi}{Dedication}
 	\newcommand{\cseeuxaristies}{Acknowledgments}
 	\newcommand{\csesymvolismoi}{Glossary}

@@ -63,7 +63,10 @@
 
 
 \begin{document}
+% Σελίδες χωρίς αρίθμηση
+\pagenumbering{gobble}
 
+% Εκτύπωση της σελίδας τίτλου
 \maketitle
 
 % Αρχικοποίηση του minitoc
@@ -75,9 +78,8 @@
 
 \include{FrontMatter/Acknowledgements}
 
+% i,ii,iii,iv...
 \pagenumbering{roman}
-
-%\pagenumbering{roman}
 
 \tableofcontents
 
@@ -91,13 +93,14 @@
 
 %\listof{algorithm}{Ευρετήριο Αλγορίθμων}
 
-%\thispagestyle{empty}
-
 \include{FrontMatter/Glossary}
 
 \include{FrontMatter/Abstract}
 
 \include{FrontMatter/ExtendedAbstract}
+
+% 1,2,3,4...
+\pagenumbering{arabic}
 
 \include{MainMatter/Chapter1}
 
@@ -110,7 +113,9 @@
 
 \printindex
 
-\pagenumbering{none}
+% Σελίδες χωρίς αρίθμηση
+\pagenumbering{gobble}
+
 \include{BackMatter/AuthorsPublications}
 
 \include{BackMatter/ShortVita}

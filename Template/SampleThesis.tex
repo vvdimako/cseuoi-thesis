@@ -97,13 +97,22 @@
 % i,ii,iii,iv...
 \pagenumbering{roman}
 
+
+%Περιεχόμενα
+\pdfbookmark[1]{\contentsname}{contents} % hyperref
 \tableofcontents
 
 \listoffigures
 
-%\addcontentsline{toc}{Chapter}{\listfigurename}
+% Εισαγωγή του ευρετήριου σχημάτων στα περιεχόμενα
+\addstarredchapter{\listfigurename} % minitoc
 
+
+%Ευρετήριο Πινάκων
 \listoftables
+
+% Εισαγωγή του ευρετήριου πινάκων στα περιεχόμενα
+\addstarredchapter{\listtablename} % minitoc
 
 %\addcontentsline{toc}{Chapter}{\listtablename}
 

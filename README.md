@@ -1,28 +1,8 @@
 cseuoi-thesis
 =============
 
-Official MSc and PhD (Xe)LaTeX thesis template for the [CSE Department, University of Ioannina](http://cse.uoi.gr/).
-
-
-Installation instructions
--------------------------
-
-1. Install TeX Live:
-	* Execute the command ```sudo apt-get update```.
-	* Execute the command ```sudo apt-get install texlive-full```.
-
-2. Install a TeX editor such as TeXstudio.
-
-3. Open the SampleThesis.tex file with your TeX editor and compile it with XeLaTeX.
-
-
-Change Log
-----------
-
-* Added support for BibTeX references.
-* Replaced the subfigure package with the subcaption package.
-* Modified the title and abstract pages.
-* Changed the structure of the directories.
-* Changed the filenames of the source code.
-* Replaced the greektex package with the xgreek package.
-* Deleted unnecessary files.
+This is the official XeLaTeX template for Master's Theses and Ph.D. Dissertations published at the [Department of Computer Science and Engineering, University of Ioannina](http://cse.uoi.gr/).
+In order to use this template, you must first install a TeX distribution.
+For example, you can install [TeX Live](https://www.tug.org/texlive/) on Ubuntu using the command ```sudo apt-get install texlive-full```.
+Then, install [TeXstudio](http://www.texstudio.org/) or another TeX editor of your choice.
+Finally, open the SampleThesis.tex file with your TeX editor and compile it with XeLaTeX.

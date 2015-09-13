@@ -7,7 +7,23 @@
 \setsansfont[Mapping=tex-text]{DejaVuSans}
 \setmonofont[Mapping=tex-text]{FreeMono}
 
-%\usepackage[usenames]{xcolor}
+
+% Πακέτο για την δημιουργία hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,        % false: boxed links; true: colored links
+	bookmarksnumbered=true, % If Acrobat bookmarks are requested, include section numbers. 
+	linkcolor=black,        % color of internal links
+	citecolor=black,
+	urlcolor=[rgb]{0,0,0.3}
+}
+
+% Εμφανίζει τα περιθώρια. Χρήσιμο για την εύρεση overfull boxes.
+%\usepackage{showframe}
+
+% Πακέτο για το χρωματισμό της σελίδας τίτλου
+% Αφού συμπληρώσετε τα στοιχεία μπορείτε να το αφαιρέσετε 
+\usepackage[usenames]{xcolor}
 
 \usepackage{psfrag}
 \usepackage{pst-all}

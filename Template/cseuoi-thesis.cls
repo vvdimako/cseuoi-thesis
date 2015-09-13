@@ -40,6 +40,7 @@
 \RequirePackage[original]{imakeidx}
 
 % Πακέτο για Θεωρήματα
+\RequirePackage{amsmath}
 \RequirePackage{amsthm}
 
 % Δημιουργία μίνι ευρετηρίου στην αρχή κάθε κεφάλαιου

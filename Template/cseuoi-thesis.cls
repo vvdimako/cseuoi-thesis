@@ -36,6 +36,9 @@
 \RequirePackage{caption}
 \RequirePackage{subcaption}
 
+% Πακέτο για ευρετήριο όρων
+\RequirePackage[original]{imakeidx}
+
 % Use Latin numerals instead of Greek numerals
 \nogreekalph
 

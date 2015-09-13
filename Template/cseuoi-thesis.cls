@@ -39,6 +39,13 @@
 % Πακέτο για ευρετήριο όρων
 \RequirePackage[original]{imakeidx}
 
+% Δημιουργία μίνι ευρετηρίου στην αρχή κάθε κεφάλαιου
+\RequirePackage[nohints]{minitoc}
+\setcounter{minitocdepth}{1}
+\setlength{\mtcindent}{-10pt}
+%\mtcsettitle{minitoc}{Description of contents}
+\nomtcpagenumbers  % remove page numbers from minitocs
+
 % Use Latin numerals instead of Greek numerals
 \nogreekalph
 

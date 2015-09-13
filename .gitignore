@@ -125,3 +125,13 @@ sympy-plots-for-*.tex/
 # WinEdt
 *.bak
 *.sav
+
+# Minitoc
+*.mtc
+*.mtc[1-9]*
+
+# Windows
+Thumbs.db
+
+# Texmaker
+*.tks

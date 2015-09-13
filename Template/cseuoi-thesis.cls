@@ -39,6 +39,9 @@
 % Πακέτο για ευρετήριο όρων
 \RequirePackage[original]{imakeidx}
 
+% Πακέτο για Θεωρήματα
+\RequirePackage{amsthm}
+
 % Δημιουργία μίνι ευρετηρίου στην αρχή κάθε κεφάλαιου
 \RequirePackage[nohints]{minitoc}
 \setcounter{minitocdepth}{1}
@@ -69,29 +72,27 @@
 	%\renewcommand{\contentsname}{Περιεχόμενα}
 	%\floatname{algorithm}{Αλγόριθμος}
 
-	\iffalse
-		% amsthm
-		\theoremstyle{plain}   % definition, remark
-		\newtheorem{theorem}{Θεώρημα}[chapter]
+	% amsthm
+	\theoremstyle{plain}   % definition, remark
+	\newtheorem{theorem}{Θεώρημα}[chapter]
 
-		\theoremstyle{plain}   % definition, remark
-		\newtheorem{lemma}{Λήμμα}[chapter]
+	\theoremstyle{plain}   % definition, remark
+	\newtheorem{lemma}{Λήμμα}[chapter]
 
-		\theoremstyle{plain}   % definition, remark
-		\newtheorem{corollary}{Πόρισμα}[chapter]
+	\theoremstyle{plain}   % definition, remark
+	\newtheorem{corollary}{Πόρισμα}[chapter]
 
-		\theoremstyle{plain}   % definition, remark
-		\newtheorem{fact}{Γεγονός}[chapter]
+	\theoremstyle{plain}   % definition, remark
+	\newtheorem{fact}{Γεγονός}[chapter]
 
-		\theoremstyle{definition}  % definition, remark
-		\newtheorem{remark}{Σημείωση}[chapter]
+	\theoremstyle{definition}  % definition, remark
+	\newtheorem{remark}{Σημείωση}[chapter]
 
-		\theoremstyle{definition}  % definition, remark
-		\newtheorem{definition}{Ορισμός}[chapter]
+	\theoremstyle{definition}  % definition, remark
+	\newtheorem{definition}{Ορισμός}[chapter]
 
-		\theoremstyle{plain}  % definition, remark
-		\newtheorem{observation}{Παρατήρηση}[chapter]
-	\fi
+	\theoremstyle{plain}  % definition, remark
+	\newtheorem{observation}{Παρατήρηση}[chapter]
 \else
 	\newcommand{\cseafierwsi}{Dedication}
 	\newcommand{\cseeuxaristies}{Acknowledgements}
@@ -112,30 +113,28 @@
 	\renewcommand{\contentsname}{Table of Contents}
 	%\floatname{algorithm}{Algorithm}
 
-	\iffalse
-		% amsthm
-		\theoremstyle{plain}   % definition, remark
-		\newtheorem{theorem}{Theorem}[chapter]
+	% amsthm
+	\theoremstyle{plain}   % definition, remark
+	\newtheorem{theorem}{Theorem}[chapter]
 
-		\theoremstyle{plain}   % definition, remark
-		\newtheorem{lemma}{Lemma}[chapter]
+	\theoremstyle{plain}   % definition, remark
+	\newtheorem{lemma}{Lemma}[chapter]
 
-		\theoremstyle{plain}   % definition, remark
-		\newtheorem{corollary}{Corollary}[chapter]
+	\theoremstyle{plain}   % definition, remark
+	\newtheorem{corollary}{Corollary}[chapter]
 
 
-		\theoremstyle{plain}   % definition, remark
-		\newtheorem{fact}{Fact}[chapter]
+	\theoremstyle{plain}   % definition, remark
+	\newtheorem{fact}{Fact}[chapter]
 
-		\theoremstyle{definition}  % definition, remark
-		\newtheorem{remark}{Note}[chapter]
+	\theoremstyle{definition}  % definition, remark
+	\newtheorem{remark}{Note}[chapter]
 
-		\theoremstyle{definition}  % definition, remark
-		\newtheorem{definition}{Definition}[chapter]
+	\theoremstyle{definition}  % definition, remark
+	\newtheorem{definition}{Definition}[chapter]
 
-		\theoremstyle{plain}  % definition, remark
-		\newtheorem{observation}{Observation}[chapter]
-	\fi
+	\theoremstyle{plain}  % definition, remark
+	\newtheorem{observation}{Observation}[chapter]
 \fi
 
 \ifPhD

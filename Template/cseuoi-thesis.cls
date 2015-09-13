@@ -96,7 +96,7 @@
 	\newtheorem{observation}{Παρατήρηση}[chapter]
 \else
 	\newcommand{\cseafierwsi}{Dedication}
-	\newcommand{\cseeuxaristies}{Acknowledgements}
+	\newcommand{\cseeuxaristies}{Acknowledgments}
 	\newcommand{\csesymvolismoi}{Glossary}
 	\newcommand{\csedimosieuseis}{Author's Publications}
 	\newcommand{\cseviografiko}{Short Vita}

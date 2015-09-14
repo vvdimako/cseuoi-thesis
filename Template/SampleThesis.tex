@@ -60,9 +60,9 @@
 % Αρχικοποίηση του minitoc
 \dominitoc[n]
 
-\include{FrontMatter/Dedication}
+\include{FrontMatter/[Optional]Dedication} % Προαιρετικό
 
-\include{FrontMatter/Acknowledgements}
+\include{FrontMatter/[Optional]Acknowledgements} % Προαιρετικό
 
 % i,ii,iii,iv...
 \pagenumbering{roman}
@@ -88,7 +88,7 @@
 
 %\listof{algorithm}{Ευρετήριο Αλγορίθμων}
 
-\include{FrontMatter/Glossary}
+\include{FrontMatter/[Optional]Glossary} % Προαιρετικό
 
 \include{FrontMatter/Abstract}
 
@@ -104,14 +104,14 @@
 \bibliographystyle{ieeetr}
 \bibliography{Content/Bibliography}
 
-\include{Content/Appendix}
+\include{Content/[Optional]Appendix} % Προαιρετικό
 
 \printindex
 
 % Σελίδες χωρίς αρίθμηση
 \pagenumbering{gobble}
 
-\include{BackMatter/AuthorsPublications}
+\include{BackMatter/[Optional]AuthorsPublications} % Προαιρετικό
 
 \include{BackMatter/ShortVita}
 

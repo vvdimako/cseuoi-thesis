@@ -123,17 +123,14 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 Τα σχήματα και οι λεζάντες τους πρέπει να είναι πάντα κεντραρισμένα και εντός των περιθωρίων του κειμένου.
 Για να εισάγουμε ένα σχήμα στο κείμενο, χρησιμοποιούμε τις παρακάτω εντολές:
 
-\noindent \verb$\begin{figure}[t]$
-
-\noindent \bs \verb$\centering$
-
-\noindent \bs \verb$\includegraphics[width=0.125\textwidth]{Figures/bird.eps}$
-
-\noindent \bs \verb$\caption{Το λογότυπο του Πανεπιστημίου Ιωαννίνων.}$
-
-\noindent \bs \verb$\label{fig:bird}$
-
-\noindent \verb$\end{figure}$
+\begin{verbatim}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.125\textwidth]{Figures/bird.eps}
+    \caption{Το λογότυπο του Πανεπιστημίου Ιωαννίνων.}
+    \label{fig:bird}
+\end{figure}
+\end{verbatim}
 
 \begin{figure}[t]
 	\centering
@@ -145,55 +142,33 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 Το αποτέλεσμα των παραπάνω εντολών φαίνεται στο Σχήμα~\ref{fig:bird}, ενώ σε περίπτωση που θέλουμε να αναφερθούμε σε αυτό μέσα στο κείμενο, χρησιμοποιούμε την εντολή \verb$Σχήμα~\ref{fig:bird}$.
 Αν θέλουμε να εισάγουμε σε ένα σχήμα πολλές εικόνες μαζί, τότε χρησιμοποιούμε τις παρακάτω εντολές:
 
-\noindent \verb$\begin{figure}[t]$
-
-\noindent \bs \verb$\centering$
-
-\noindent \bs \verb$\begin{subfigure}[t]{0.3\textwidth}$
-
-\noindent \bs\bs \verb$\centering$
-
-\noindent \bs\bs \verb$\includegraphics[width=0.25\textwidth]{Figures/bird.eps}$
-
-\noindent \bs\bs \verb$\caption{}$
-
-\noindent \bs\bs \verb$\label{subfig:ThreeBirdsA}$
-
-\noindent \bs \verb$\end{subfigure}$
-
-\noindent \bs \verb$\hfill$
-
-\noindent \bs \verb$\begin{subfigure}[t]{0.3\textwidth}$
-
-\noindent \bs\bs \verb$\centering$
-
-\noindent \bs\bs \verb$\includegraphics[width=0.25\textwidth]{Figures/bird.eps}$
-
-\noindent \bs\bs \verb$\caption{}$
-
-\noindent \bs\bs \verb$\label{subfig:ThreeBirdsB}$
-
-\noindent \bs \verb$\end{subfigure}$
-
-\noindent \bs \verb$\hfill$
-
-\noindent \bs \verb$\begin{subfigure}[t]{0.3\textwidth}$
-
-\noindent \bs\bs \verb$\centering$
-
-\noindent \bs\bs \verb$\includegraphics[width=0.25\textwidth]{Figures/bird.eps}$
-
-\noindent \bs\bs \verb$\caption{}$
-
-\noindent \bs\bs \verb$\label{subfig:ThreeBirdsC}$
-
-\noindent \bs \verb$\end{subfigure}$
-
-\noindent \bs \verb$\caption{Τρεις εικόνες.}$
-
-\noindent \bs \verb$\label{fig:ThreeBirds}$
-
-\noindent \verb$\end{figure}$
+\begin{verbatim}
+\begin{figure}[t]
+    \centering
+    \begin{subfigure}[t]{0.3\textwidth}
+        \centering
+        \includegraphics[width=0.25\textwidth]{Figures/bird.eps}
+        \caption{}
+        \label{subfig:ThreeBirdsA}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.3\textwidth}
+        \centering
+        \includegraphics[width=0.25\textwidth]{Figures/bird.eps}
+        \caption{}
+        \label{subfig:ThreeBirdsB}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.3\textwidth}
+        \centering
+        \includegraphics[width=0.25\textwidth]{Figures/bird.eps}
+        \caption{}
+        \label{subfig:ThreeBirdsC}
+    \end{subfigure}
+    \caption{Τρεις εικόνες.}
+    \label{fig:ThreeBirds}
+\end{figure}
+\end{verbatim}
 
 \begin{figure}[t]
 	\centering

@@ -202,47 +202,50 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 \subsection{Πίνακες}
 \label{subsec:Tables}
 
-Τα ίδια ισχύουν και για τους πίνακες με την διαφορά ότι γίνεται
-χρήση των εντολών:
+Με παρόμοιες εντολές μπορούμε να εισάγουμε και πίνακες.
+Για παράδειγμα, με τις παρακάτω εντολές δημιουργούμε τον Πίνακα~\ref{tab:Example}.
 
-\y \bs\s\s
-
-\verb"\begin{table} ....\end{table}"
-
-\chl Π.χ.
-
-\noindent\verb"\begin{table}[h]"
-
-\noindent\verb"\begin{center}"
-
-\noindent\verb"\begin{tabular}{lll}\hline"
-
-\noindent\verb"1 & 2 & 3 \\"
-
-\noindent\verb"4 & 5 & 6"
-
-\noindent\verb"\\ \hline \\"
-
-\noindent\verb"\end{tabular}"
-
-\noindent\verb"\caption{Ένας Πίνακας.} \label{tab:Example}"
-
-\noindent\verb"\end{center}"
-
-\noindent\verb"\end{table}"
-
-\begin{table}[h]
-\begin{center}
-\caption{Ένας Πίνακας.} \label{tab:Example}
-\begin{tabular}{lll}\hline
-1 & 2 & 3 \\
-4 & 5 & 6
-\\ \hline \\
-\end{tabular}
-\end{center}
+\begin{verbatim}
+\begin{table}[t]
+    \centering
+    \caption{Ένας Πίνακας.}
+    \label{tab:Example}
+    \begin{tabular}{| l || l | l | l |}
+        \hline
+        κελί 1 & κελί 2 & κελί 3 & κελί 4\\
+        \hline
+        \hline
+        κελί 5 & κελί 6 & κελί 7 & κελί 8\\
+        \hline
+        κελί 9 & κελί 10 & κελί 11 & κελί 12\\
+        \hline
+        κελί 13 & κελί 14 & κελί 15 & κελί 16\\
+        \hline
+        κελί 17 & κελί 18 & κελί 19 & κελί 20\\
+        \hline
+        \end{tabular}
 \end{table}
+\end{verbatim}
 
-\newpage
+\begin{table}[t]
+	\centering
+	\caption{Ένας Πίνακας.}
+	\label{tab:Example}
+	\begin{tabular}{| l || l | l | l |}
+		\hline
+		κελί 1 & κελί 2 & κελί 3 & κελί 4\\
+		\hline
+		\hline
+		κελί 5 & κελί 6 & κελί 7 & κελί 8\\
+		\hline
+		κελί 9 & κελί 10 & κελί 11 & κελί 12\\
+		\hline
+		κελί 13 & κελί 14 & κελί 15 & κελί 16\\
+		\hline
+		κελί 17 & κελί 18 & κελί 19 & κελί 20\\
+		\hline
+	\end{tabular}
+\end{table}
 
 
 \subsection{Εξισώσεις}

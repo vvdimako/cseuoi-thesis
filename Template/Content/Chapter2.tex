@@ -90,19 +90,19 @@ To πακέτο xgreek ορίζει διάφορες χρήσιμες μακρο
 \y Για \LaTeX:
 
 \begin{itemize}
-\item Κεφάλαια: \verb"\chapter{όνομα}"
-\item Τίτλοι Ενότητας: \verb"\section{όνομα}"
-\item Υπότιτλοι Ενότητας: \verb"\subsection{όνομα}"
+\item Κεφάλαια: \verb|\chapter{όνομα}|
+\item Τίτλοι Ενότητας: \verb|\section{όνομα}|
+\item Υπότιτλοι Ενότητας: \verb|\subsection{όνομα}|
 \end{itemize}
 
 \noindent Είναι επιθυμητό να χρησιμοποιείται η εντολή:
 
-\chl \verb"\label{όνομα_Επιγραφής}" δίπλα από τις παραπάνω
+\chl \verb|\label{όνομα_Επιγραφής}| δίπλα από τις παραπάνω
 εντολές για να μπορείτε να αναφέρεστε σε αυτά με την εντολή:
 
-\chl \verb"\ref{όνομα_Επιγραφής}".
+\chl \verb|\ref{όνομα_Επιγραφής}|.
 
-\chl Π.χ.: \verb"... στην Ενότητα~\ref{sec:Text} αναφερόμαστε...."
+\chl Π.χ.: \verb|... στην Ενότητα~\ref{sec:Text} αναφερόμαστε....|
 
 \chl στην Ενότητα~\ref{sec:Text} αναφερόμαστε στις τεχνικές
 λεπτομέρειες του κειμένου της διατριβής.
@@ -129,10 +129,10 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 
 \begin{verbatim}
 \begin{figure}[t]
-    \centering
-    \includegraphics[width=0.125\textwidth]{Figures/bird.eps}
-    \caption{Το λογότυπο του Πανεπιστημίου Ιωαννίνων.}
-    \label{fig:bird}
+ \centering
+ \includegraphics[width=0.125\textwidth]{Figures/bird.eps}
+ \caption{Το λογότυπο του Πανεπιστημίου Ιωαννίνων.}
+ \label{fig:bird}
 \end{figure}
 \end{verbatim}
 
@@ -143,38 +143,36 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 	\label{fig:bird}
 \end{figure}
 
-Το αποτέλεσμα των παραπάνω εντολών φαίνεται στο Σχήμα~\ref{fig:bird}, ενώ σε περίπτωση που θέλουμε να αναφερθούμε σε αυτό μέσα στο κείμενο, χρησιμοποιούμε την εντολή \verb$Σχήμα~\ref{fig:bird}$.
+Το αποτέλεσμα των παραπάνω εντολών φαίνεται στο Σχήμα~\ref{fig:bird}, ενώ σε περίπτωση που θέλουμε να αναφερθούμε σε αυτό μέσα στο κείμενο, χρησιμοποιούμε την εντολή \verb|Σχήμα~\ref{fig:bird}|.
 Αν θέλουμε να εισάγουμε σε ένα σχήμα πολλές εικόνες μαζί, τότε χρησιμοποιούμε τις παρακάτω εντολές:
 
-{\small
 \begin{verbatim}
 \begin{figure}[t]
-    \centering
-    \begin{subfigure}[t]{0.3\textwidth}
-        \centering
-        \includegraphics[height=0.15\textheight]{Figures/GraphA.pdf}
-        \caption{}
-        \label{subfig:GraphA}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.3\textwidth}
-        \centering
-        \includegraphics[height=0.15\textheight]{Figures/GraphB.pdf}
-        \caption{}
-        \label{subfig:GraphB}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[t]{0.3\textwidth}
-        \centering
-        \includegraphics[height=0.15\textheight]{Figures/GraphC.pdf}
-        \caption{}
-        \label{subfig:GraphC}
-    \end{subfigure}
-    \caption{Τρία γραφήματα.}
-    \label{fig:ThreeGraphs}
+ \centering
+ \begin{subfigure}[t]{0.3\textwidth}
+  \centering
+  \includegraphics[height=0.15\textheight]{Figures/GraphA.pdf}
+  \caption{}
+  \label{subfig:GraphA}
+ \end{subfigure}
+ \hfill
+ \begin{subfigure}[t]{0.3\textwidth}
+  \centering
+  \includegraphics[height=0.15\textheight]{Figures/GraphB.pdf}
+  \caption{}
+  \label{subfig:GraphB}
+ \end{subfigure}
+ \hfill
+ \begin{subfigure}[t]{0.3\textwidth}
+  \centering
+  \includegraphics[height=0.15\textheight]{Figures/GraphC.pdf}
+  \caption{}
+  \label{subfig:GraphC}
+ \end{subfigure}
+ \caption{Τρία γραφήματα.}
+ \label{fig:ThreeGraphs}
 \end{figure}
 \end{verbatim}
-}
 
 \begin{figure}[t]
 	\centering
@@ -213,23 +211,23 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 
 \begin{verbatim}
 \begin{table}[t]
-    \centering
-    \caption{Ένας Πίνακας.}
-    \label{tab:Example}
-    \begin{tabular}{| l || l | l | l |}
-        \hline
-        κελί 1 & κελί 2 & κελί 3 & κελί 4\\
-        \hline
-        \hline
-        κελί 5 & κελί 6 & κελί 7 & κελί 8\\
-        \hline
-        κελί 9 & κελί 10 & κελί 11 & κελί 12\\
-        \hline
-        κελί 13 & κελί 14 & κελί 15 & κελί 16\\
-        \hline
-        κελί 17 & κελί 18 & κελί 19 & κελί 20\\
-        \hline
-        \end{tabular}
+ \centering
+ \caption{Ένας Πίνακας.}
+ \label{tab:Example}
+ \begin{tabular}{| l || l | l | l |}
+  \hline
+  κελί 1 & κελί 2 & κελί 3 & κελί 4\\
+  \hline
+  \hline
+  κελί 5 & κελί 6 & κελί 7 & κελί 8\\
+  \hline
+  κελί 9 & κελί 10 & κελί 11 & κελί 12\\
+  \hline
+  κελί 13 & κελί 14 & κελί 15 & κελί 16\\
+  \hline
+  κελί 17 & κελί 18 & κελί 19 & κελί 20\\
+  \hline
+ \end{tabular}
 \end{table}
 \end{verbatim}
 
@@ -260,7 +258,7 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 Οι εξισώσεις γράφονται με τον ίδιο τρόπο όπως προηγουμένως, με
 χρήση της εντολής:
 
-\begin{center}\verb"\begin{equation} ... \end{equation}"\end{center}
+\begin{center}\verb|\begin{equation} ... \end{equation}|\end{center}
 
 \subsection{Θεωρήματα}
 \label{subsec:Theorems}
@@ -268,7 +266,7 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 \begin{itemize}
 	\item Θεώρημα:
 
-	\begin{center}\verb"\begin{theorem} ... \end{theorem}"\end{center}
+	\begin{center}\verb|\begin{theorem} ... \end{theorem}|\end{center}
 
 	\begin{theorem}
 	Τhe square of the hypotenuse (the side opposite the right angle)
@@ -277,7 +275,7 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 
 	\item Λήμμα:
 
-	\begin{center}\verb"\begin{lemma} ... \end{lemma}"\end{center}
+	\begin{center}\verb|\begin{lemma} ... \end{lemma}|\end{center}
 
 	\begin{lemma}
 	If a prime divides the product of two numbers, it must divide at least
@@ -286,7 +284,7 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 	
 	\item Πόρισμα:
 
-	\begin{center}\verb"\begin{corollary} ... \end{corollary}"\end{center}
+	\begin{center}\verb|\begin{corollary} ... \end{corollary}|\end{center}
 	
 	\begin{corollary}
 	In any right triangle, the hypotenuse is greater than any one of the
@@ -295,7 +293,7 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 	
 	\item Γεγονός
 	
-	\begin{center}\verb"\begin{fact} ... \end{fact}"\end{center}
+	\begin{center}\verb|\begin{fact} ... \end{fact}|\end{center}
 	
 	\begin{fact}
 	It takes 8 minutes 17 seconds for light to travel from the Sun’s surface
@@ -304,7 +302,7 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 	
 	\item Σημείωση
 	
-	\begin{center}\verb"\begin{remark} ... \end{remark}"\end{center}
+	\begin{center}\verb|\begin{remark} ... \end{remark}|\end{center}
 	
 	\begin{remark}
 	This is a remark.
@@ -312,7 +310,7 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 	
 	\item Ορισμός
 	
-	\begin{center}\verb"\begin{definition} ... \end{definition}"\end{center}
+	\begin{center}\verb|\begin{definition} ... \end{definition}|\end{center}
 	
 	\begin{definition}
 	Addition is bringing two or more numbers (or things) together to make a
@@ -321,7 +319,7 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 	
 	\item Παρατήρηση
 	
-	\begin{center}\verb"\begin{observation} ... \end{observation}"\end{center}
+	\begin{center}\verb|\begin{observation} ... \end{observation}|\end{center}
 	
 	\begin{observation}
 	This is an observation.
@@ -390,26 +388,26 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 Για να παραχθεί το ευρετήριο όρων θα πρέπει:
 
 \begin{enumerate}
-  \item Πριν την εντολή \verb"\begin{document}" να εισαχθεί η
-  εντολή \verb"\makeindex".
+  \item Πριν την εντολή \verb|\begin{document}| να εισαχθεί η
+  εντολή \verb|\makeindex|.
   \item Για κάθε όρο που θέλετε να προστεθεί στο ευρετήριο γίνεται
-  με την εντολή\index{νέος όρος} \verb"\index{νέος όρος}".
+  με την εντολή\index{νέος όρος} \verb|\index{νέος όρος}|.
   \item Για κάθε υπο-όρο που θέλετε να προστεθεί σε έναν προηγούμενο όρο, γίνεται
-  με την εντολή\index{νέος όρος!υπο-όρος} \verb"\index{νέος όρος!υπο-όρος}".
+  με την εντολή\index{νέος όρος!υπο-όρος} \verb|\index{νέος όρος!υπο-όρος}|.
   \item Κατασκευάζεται το ευρετήριο όρων με την εντολή\\
-  \verb"\printindex". \\Πρέπει να προηγηθεί του Βιογραφικού
+  \verb|\printindex|. \\Πρέπει να προηγηθεί του Βιογραφικού
   Σημειώματος.
   \item Τοποθετούμε σε σχόλιο την εντολή
-  \verb"\printindex". Δηλαδή,
-  \verb"%\printindex"
+  \verb|\printindex|. Δηλαδή,
+  \verb|%\printindex|
   \item Εκτελούμε
-  \verb"Latex" το αρχείο.tex.
+  \verb|Latex| το αρχείο.tex.
   \item Εκτελούμε
-  \verb"Makeindex"
+  \verb|Makeindex|
   \item Βγάζουμε από σχόλιο την εντολή
-  \verb"\printindex"
+  \verb|\printindex|
   \item Εκτελούμε
-  \verb"Latex" το αρχείο.tex.
+  \verb|Latex| το αρχείο.tex.
 \end{enumerate}
 
 
@@ -420,9 +418,9 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 \section{Χρήσιμες Οδηγίες για \LaTeX}
 \label{sec:LaTeX}
 
-Πολλές φορές κάποιες αναφορές (με την εντολή \verb"\ref{}") της
+Πολλές φορές κάποιες αναφορές (με την εντολή \verb|\ref{}|) της
 βιβλιογραφία ή σχημάτων ή εξισώσεων ή πινάκων κ.τ.λ. να μην
-γίνονται σωστά. Τότε το \LaTeX παράγει την συμβολοσειρά verb"??"
+γίνονται σωστά. Τότε το \LaTeX παράγει την συμβολοσειρά \verb|??|
 στην συγκεκριμένη θέση του κειμένου. Για να μην ψάχνετε μέσα σε
 όλο το κείμενο που εμφανίζεται η συγκεκριμένη συμβολοσειρά,
 μπορείτε να ανοίξετε το αρχείο ``log'' που παράγεται από το \LaTeX

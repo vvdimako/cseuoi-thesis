@@ -115,7 +115,7 @@
 	\nogreekalph
 	
 	\newcommand{\cseafierwsi}{Dedication}
-	\newcommand{\cseeuxaristies}{Acknowledgments}
+	\newcommand{\cseeuxaristies}{Acknowledgements}
 	\newcommand{\csesymvolismoi}{Glossary}
 	\newcommand{\csedimosieuseis}{Author's Publications}
 	\newcommand{\cseviografiko}{Short Vita}

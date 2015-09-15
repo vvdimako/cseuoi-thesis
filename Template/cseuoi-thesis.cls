@@ -60,12 +60,11 @@
 	\newcommand{\cseparartima}{Παράρτημα}
 	
 	% Σελίδα περίληψης
-	\newcommand{\cseabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής,
-	Πανεπιστήμιο Ιωαννίνων.}
+	\newcommand{\cseabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}
 	\newcommand{\cseabstractsup}{Επιβλέπων}
 	\newcommand{\cseabstractcs}{στην Πληροφορική}
 	\ifPhD
-		\newcommand{\cseabstracttype}{Δ.Δ}
+		\newcommand{\cseabstracttype}{Δ.Δ.}
 		\newcommand{\cseextabstracttype}{Ph.D.}
 	\else
 		\newcommand{\cseabstracttype}{Μ.Δ.Ε.}
@@ -73,9 +72,8 @@
 	\fi
 	\newcommand{\cseextabstract}{Abstract}
 	\newcommand{\cseextabstractcs}{degree in Computer Science}
-	\newcommand{\cseextabstractsup}{Supervisor}
-	\newcommand{\cseextabstractdpt}{Department of Computer Science and
-	Engineering, University of Ioannina, Greece.}
+	\newcommand{\cseextabstractsup}{Advisor}
+	\newcommand{\cseextabstractdpt}{Department of Computer Science and Engineering, University of Ioannina, Greece}
 
 	% xgreek
 	%\renewcommand{\chaptername}{Κεφάλαιο}
@@ -122,13 +120,12 @@
 	\newcommand{\cseparartima}{Appendix}
 	
 	% Σελίδα περίληψης
-	\newcommand{\cseabstractdpt}{Department of Computer Science and
-	Engineering, University of Ioannina, Greece.}
-	\newcommand{\cseabstractsup}{Supervisor}
+	\newcommand{\cseabstractdpt}{Department of Computer Science and Engineering, University of Ioannina, Greece}
+	\newcommand{\cseabstractsup}{Advisor}
 	\newcommand{\cseabstractcs}{degree in Computer Science}
 	\ifPhD
 		\newcommand{\cseabstracttype}{Ph.D.}
-		\newcommand{\cseextabstracttype}{Δ.Δ}
+		\newcommand{\cseextabstracttype}{Δ.Δ.}
 	\else
 		\newcommand{\cseabstracttype}{M.Sc.}
 		\newcommand{\cseextabstracttype}{Μ.Δ.Ε.}
@@ -136,8 +133,7 @@
 	\newcommand{\cseextabstract}{Περίληψη}
 	\newcommand{\cseextabstractcs}{στην Πληροφορική}
 	\newcommand{\cseextabstractsup}{Επιβλέπων}
-	\newcommand{\cseextabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής,
-	Πανεπιστήμιο Ιωαννίνων.}
+	\newcommand{\cseextabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}
 
 	% xgreek
 	\renewcommand{\chaptername}{Chapter}
@@ -178,12 +174,12 @@
 \ifPhD
 	\newcommand{\csethesisTypeEl}{ΔΙΔΑΚΤΟΡΙΚΗ ΔΙΑΤΡΙΒΗ}
 	\newcommand{\csediplwmaEl}{ΔΙΔΑΚΤΟΡΙΚΟΥ ΔΙΠΛΩΜΑΤΟΣ}
-	\newcommand{\csethesisTypeEn}{PhD DISSERTATION}
+	\newcommand{\csethesisTypeEn}{Ph.D. DISSERTATION}
 	\newcommand{\csediplwmaEn}{PhD} % TODO
 \else
 	\newcommand{\csethesisTypeEl}{ΜΕΤΑΠΤΥΧΙΑΚΗ ΕΡΓΑΣΙΑ ΕΞΕΙΔΙΚΕΥΣΗΣ}
 	\newcommand{\csediplwmaEl}{ΜΕΤΑΠΤΥΧΙΑΚΟΥ ΔΙΠΛΩΜΑΤΟΣ ΕΙΔΙΚΕΥΣΗΣ}
-	\newcommand{\csethesisTypeEn}{MASTER THESIS}
+	\newcommand{\csethesisTypeEn}{MASTER'S THESIS}
 	\newcommand{\csediplwmaEn}{MASTER OF SCIENCE}
 \fi
 

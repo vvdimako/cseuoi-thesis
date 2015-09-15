@@ -70,7 +70,7 @@
 		\newcommand{\cseabstracttype}{Μ.Δ.Ε.}
 		\newcommand{\cseextabstracttype}{M.Sc.}
 	\fi
-	\newcommand{\cseextabstract}{Abstract}
+	\newcommand{\cseextabstract}{Extended Abstract}
 	\newcommand{\cseextabstractcs}{degree in Computer Science}
 	\newcommand{\cseextabstractsup}{Advisor}
 	\newcommand{\cseextabstractdpt}{Department of Computer Science and Engineering, University of Ioannina, Greece}
@@ -130,7 +130,7 @@
 		\newcommand{\cseabstracttype}{M.Sc.}
 		\newcommand{\cseextabstracttype}{Μ.Δ.Ε.}
 	\fi
-	\newcommand{\cseextabstract}{Περίληψη}
+	\newcommand{\cseextabstract}{Εκτεταμένη Περίληψη}
 	\newcommand{\cseextabstractcs}{στην Πληροφορική}
 	\newcommand{\cseextabstractsup}{Επιβλέπων}
 	\newcommand{\cseextabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}

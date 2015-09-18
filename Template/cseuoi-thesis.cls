@@ -37,6 +37,7 @@
 \RequirePackage{subcaption}
 
 % Πακέτο για ευρετήριο όρων
+\RequirePackage[unbalanced]{idxlayout}
 \RequirePackage[original]{imakeidx}
 
 % Πακέτο για Θεωρήματα

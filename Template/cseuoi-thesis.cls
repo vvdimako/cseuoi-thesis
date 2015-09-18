@@ -21,7 +21,7 @@
 \LoadClass[a4paper,oneside]{report}
 
 % Περιθώρια σελίδας
-\RequirePackage[nohead, top=2.5cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+\RequirePackage[nohead, top=2.5cm, bottom=3cm, left=2.5cm, right=2.5cm, marginparwidth=2.4cm, marginparsep=0.5mm]{geometry}
 
 % Πακέτα για Ελληνικά
 \RequirePackage{fontspec}

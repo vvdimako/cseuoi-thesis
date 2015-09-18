@@ -10,13 +10,6 @@
 
 % Πακέτο για την δημιουργία hyperlinks
 \usepackage{hyperref}
-\hypersetup{
-	colorlinks=true,        % false: boxed links; true: colored links
-	bookmarksnumbered=true, % If Acrobat bookmarks are requested, include section numbers. 
-	linkcolor=black,        % color of internal links
-	citecolor=black,
-	urlcolor=[rgb]{0,0,0.3}
-}
 
 % Πακέτο για το χρωματισμό της σελίδας τίτλου
 % Αφού συμπληρώσετε τα στοιχεία μπορείτε να το αφαιρέσετε 
@@ -42,12 +35,26 @@
 \makeindex[intoc]
 
 
-% Συμπληρώστε τις παρακάτω εντολές
+% !!! Συμπληρώστε τις παρακάτω εντολές (αφαιρώντας το \colorbox{gray}{}) !!!
 \title{\colorbox{gray}{Τίτλος Διατριβής}}
 \author{\colorbox{gray}{Όνομα Επώνυμο}}
 \date{\colorbox{gray}{Μήνας και Έτος Αποφοίτησης}}
 \Arthro{\colorbox{gray}{τον/την}}
-\Ekseidikseusi{\colorbox{gray}{ΣΤΗΝ ΘΕΩΡΙΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ}}
+\Ekseidikseusi{\colorbox{gray}{ΣΤΗΝ ΘΕΩΡΙΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ}} % Μόνο για μεταπτυχιακό
+
+% Ρύθμιση του πακέτου hyperref
+\makeatletter
+\hypersetup{
+	colorlinks=true,        % false: boxed links; true: colored links
+	bookmarksnumbered=true, % If Acrobat bookmarks are requested, include section numbers. 
+	linkcolor=black,        % color of internal links
+	citecolor=black,
+	urlcolor=[rgb]{0,0,0.3},
+	pdfauthor={\@author},
+	pdftitle={\@title},
+	pdfsubject={Thesis}
+}
+\makeatother
 
 
 \begin{document}

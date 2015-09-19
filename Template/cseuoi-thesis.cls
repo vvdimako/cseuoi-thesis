@@ -55,7 +55,6 @@
 \ifgreek
 	\newcommand{\cseafierwsi}{Αφιέρωση}
 	\newcommand{\cseeuxaristies}{Ευχαριστίες}
-	\newcommand{\csesymvolismoi}{Επεξηγήσεις Συμβολισμών}
 	\newcommand{\csedimosieuseis}{Δημοσιεύσεις}
 	\newcommand{\cseviografiko}{Βιογραφικό}
 	\newcommand{\cseparartima}{Παράρτημα}
@@ -81,6 +80,7 @@
 	%\renewcommand{\abstractname}{Περίληψη}
 	\renewcommand{\listfigurename}{Ευρετήριο Σχημάτων}
 	\renewcommand{\listtablename}{Ευρετήριο Πινάκων}
+	\renewcommand{\glossaryname}{Επεξηγήσεις Συμβολισμών}
 	%\renewcommand{\bibname}{Βιβλιογραφία}
 	%\renewcommand{\figurename}{Σχήμα}
 	%\renewcommand{\tablename}{Πίνακας}
@@ -115,7 +115,6 @@
 	
 	\newcommand{\cseafierwsi}{Dedication}
 	\newcommand{\cseeuxaristies}{Acknowledgements}
-	\newcommand{\csesymvolismoi}{Glossary}
 	\newcommand{\csedimosieuseis}{Author's Publications}
 	\newcommand{\cseviografiko}{Short Vita}
 	\newcommand{\cseparartima}{Appendix}
@@ -141,6 +140,7 @@
 	\renewcommand{\abstractname}{Abstract}
 	\renewcommand{\listfigurename}{List of Figures}
 	\renewcommand{\listtablename}{List of Tables}
+	\renewcommand{\glossaryname}{Glossary}
 	\renewcommand{\bibname}{Bibliography}
 	\renewcommand{\figurename}{Figure}
 	\renewcommand{\tablename}{Table}

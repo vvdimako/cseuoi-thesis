@@ -55,8 +55,8 @@
 \ifgreek
 	\newcommand{\cseafierwsi}{Αφιέρωση}
 	\newcommand{\cseeuxaristies}{Ευχαριστίες}
-	\newcommand{\csedimosieuseis}{Δημοσιεύσεις}
-	\newcommand{\cseviografiko}{Βιογραφικό}
+	\newcommand{\csedimosieuseis}{Δημοσιεύσεις Συγγραφέα}
+	\newcommand{\cseviografiko}{Σύντομο Βιογραφικό}
 	\newcommand{\cseparartima}{Παράρτημα}
 	
 	% Σελίδα περίληψης
@@ -78,9 +78,9 @@
 	% xgreek
 	%\renewcommand{\chaptername}{Κεφάλαιο}
 	%\renewcommand{\abstractname}{Περίληψη}
-	\renewcommand{\listfigurename}{Ευρετήριο Σχημάτων}
-	\renewcommand{\listtablename}{Ευρετήριο Πινάκων}
-	\renewcommand{\glossaryname}{Επεξηγήσεις Συμβολισμών}
+	\renewcommand{\listfigurename}{Κατάλογος Σχημάτων}
+	\renewcommand{\listtablename}{Κατάλογος Πινάκων}
+	%\renewcommand{\glossaryname}{Επεξηγήσεις Συμβολισμών}
 	%\renewcommand{\bibname}{Βιβλιογραφία}
 	%\renewcommand{\figurename}{Σχήμα}
 	%\renewcommand{\tablename}{Πίνακας}
@@ -116,7 +116,7 @@
 	\newcommand{\cseafierwsi}{Dedication}
 	\newcommand{\cseeuxaristies}{Acknowledgements}
 	\newcommand{\csedimosieuseis}{Author's Publications}
-	\newcommand{\cseviografiko}{Short Vita}
+	\newcommand{\cseviografiko}{Short Biography}
 	\newcommand{\cseparartima}{Appendix}
 	
 	% Σελίδα περίληψης

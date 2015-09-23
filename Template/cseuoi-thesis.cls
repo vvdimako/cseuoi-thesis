@@ -116,7 +116,7 @@
 	\newcommand{\cseafierwsi}{Dedication}
 	\newcommand{\cseeuxaristies}{Acknowledgements}
 	\newcommand{\csedimosieuseis}{Author's Publications}
-	\newcommand{\cseviografiko}{Short Biography}
+	\newcommand{\cseviografiko}{Short Bio}
 	\newcommand{\cseparartima}{Appendix}
 	
 	% Σελίδα περίληψης

@@ -55,6 +55,7 @@
 
 
 \begin{document}
+
 % Σελίδες χωρίς αρίθμηση
 \pagenumbering{gobble}
 
@@ -65,24 +66,23 @@
 \dominitoc[n]
 
 \include{FrontMatter/[Optional]Dedication} % Προαιρετικό
-
 \include{FrontMatter/[Optional]Acknowledgements} % Προαιρετικό
 
-% i,ii,iii,iv...
+
+% i, ii, iii, iv, ...
 \pagenumbering{roman}
 
-
-%Περιεχόμενα
+% Περιεχόμενα
 \pdfbookmark[1]{\contentsname}{contents} % hyperref
 \tableofcontents
 
+% Κατάλογος Σχημάτων
 \listoffigures
 
 % Εισαγωγή του ευρετήριου σχημάτων στα περιεχόμενα
 \addstarredchapter{\listfigurename} % minitoc
 
-
-%Ευρετήριο Πινάκων
+% Κατάλογος Πινάκων
 \listoftables
 
 % Εισαγωγή του ευρετήριου πινάκων στα περιεχόμενα
@@ -95,29 +95,36 @@
 \include{FrontMatter/[Optional]Glossary} % Προαιρετικό
 
 \include{FrontMatter/Abstract}
-
 \include{FrontMatter/ExtendedAbstract}
 
-% 1,2,3,4...
+
+% 1, 2, 3, 4, ...
 \pagenumbering{arabic}
 
+% Εισαγωγή των κεφαλαίων
 \include{Content/Chapter1}
-
 \include{Content/Chapter2}
 
+% Εισαγωγή της βιβλιογραφίας σε μορφή BibTeX
 \bibliographystyle{ieeetr}
 \bibliography{Content/Bibliography}
 
+% Προαιρετικά, μπορείτε να εισάγετε παραρτήματα
 \appendix
-\include{Content/[Optional]Appendix} % Προαιρετικό
+\include{Content/[Optional]AppendixA}
+\include{Content/[Optional]AppendixB}
+\include{Content/[Optional]AppendixC}
 
+% Εκτύπωση του ευρετηρίου
 \printindex
+
 
 % Σελίδες χωρίς αρίθμηση
 \pagenumbering{gobble}
 
 \include{BackMatter/[Optional]AuthorsPublications} % Προαιρετικό
 
+% Σύντομο Βιογραφικό
 \include{BackMatter/ShortBio}
 
 \end{document}

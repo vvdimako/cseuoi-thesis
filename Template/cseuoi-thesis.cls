@@ -44,6 +44,9 @@
 \RequirePackage{amsmath}
 \RequirePackage{amsthm}
 
+% Πακέτο για την δημιουργία hyperlinks
+\RequirePackage{hyperref}
+
 % Δημιουργία μίνι ευρετηρίου στην αρχή κάθε κεφάλαιου
 \RequirePackage[nohints]{minitoc}
 \setcounter{minitocdepth}{1}
@@ -53,6 +56,10 @@
 
 
 \ifgreek
+	% Greek uppercase alphabetic numerals cause errors due to the \MakeUppercase command
+	% For now, use Latin uppercase alphabetic numerals
+	\let\@Alph\latin@Alph
+	
 	\newcommand{\cseafierwsi}{Αφιέρωση}
 	\newcommand{\cseeuxaristies}{Ευχαριστίες}
 	\newcommand{\csedimosieuseis}{Δημοσιεύσεις Συγγραφέα}
@@ -86,6 +93,7 @@
 	%\renewcommand{\tablename}{Πίνακας}
 	%\renewcommand{\indexname}{Ευρετήριο}
 	%\renewcommand{\contentsname}{Περιεχόμενα}
+	%\renewcommand{\appendixname}{Παράρτημα}
 	%\floatname{algorithm}{Αλγόριθμος}
 
 	% amsthm
@@ -146,6 +154,7 @@
 	\renewcommand{\tablename}{Table}
 	\renewcommand{\indexname}{Index}
 	\renewcommand{\contentsname}{Table of Contents}
+	\renewcommand{\appendixname}{Appendix}
 	%\floatname{algorithm}{Algorithm}
 
 	% amsthm

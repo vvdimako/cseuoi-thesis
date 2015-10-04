@@ -40,6 +40,9 @@
 \RequirePackage[unbalanced]{idxlayout}
 \RequirePackage[original]{imakeidx}
 
+% Πακέτο για εισαγωγή της βιβλιογραφίας στα περιεχόμενα
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+
 % Πακέτο για Θεωρήματα
 \RequirePackage{amsmath}
 \RequirePackage{amsthm}

@@ -188,7 +188,7 @@
 	\newcommand{\csethesisTypeEl}{ΔΙΔΑΚΤΟΡΙΚΗ ΔΙΑΤΡΙΒΗ}
 	\newcommand{\csediplwmaEl}{ΔΙΔΑΚΤΟΡΙΚΟΥ ΔΙΠΛΩΜΑΤΟΣ}
 	\newcommand{\csethesisTypeEn}{Ph.D. DISSERTATION}
-	\newcommand{\csediplwmaEn}{PhD} % TODO
+	\newcommand{\csediplwmaEn}{DOCTOR OF PHILOSOPHY}
 \else
 	\newcommand{\csethesisTypeEl}{ΜΕΤΑΠΤΥΧΙΑΚΗ ΕΡΓΑΣΙΑ ΕΞΕΙΔΙΚΕΥΣΗΣ}
 	\newcommand{\csediplwmaEl}{ΜΕΤΑΠΤΥΧΙΑΚΟΥ ΔΙΠΛΩΜΑΤΟΣ ΕΙΔΙΚΕΥΣΗΣ}

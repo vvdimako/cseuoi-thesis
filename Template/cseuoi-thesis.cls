@@ -59,10 +59,6 @@
 
 
 \ifgreek
-	% Greek uppercase alphabetic numerals cause errors due to the \MakeUppercase command
-	% For now, use Latin uppercase alphabetic numerals
-	\let\@Alph\latin@Alph
-	
 	\newcommand{\cseafierwsi}{Αφιέρωση}
 	\newcommand{\cseeuxaristies}{Ευχαριστίες}
 	\newcommand{\csedimosieuseis}{Δημοσιεύσεις Συγγραφέα}

@@ -18,9 +18,6 @@
 \usepackage{psfrag}
 \usepackage{pst-all}
 \usepackage{pst-node,pstricks}
-\usepackage{latexsym}
-\usepackage[noend]{algorithmic}
-\usepackage[plain]{algorithm}
 
 
 %%%%%%%%%%%% Some spaces %%%%%%%%%%%%%%%%%%%%%
@@ -90,7 +87,11 @@
 
 %\addcontentsline{toc}{Chapter}{\listtablename}
 
-%\listof{algorithm}{Ευρετήριο Αλγορίθμων}
+% Κατάλογος Αλγορίθμων
+\listof{algorithm}{\listalgorithmname}
+
+% Εισαγωγή του ευρετήριου αλγορίθμων στα περιεχόμενα
+\addstarredchapter{\listalgorithmname} % minitoc
 
 \include{FrontMatter/[Optional]Glossary} % Προαιρετικό
 

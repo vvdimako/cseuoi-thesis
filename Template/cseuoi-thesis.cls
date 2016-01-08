@@ -43,9 +43,14 @@
 % Πακέτο για εισαγωγή της βιβλιογραφίας στα περιεχόμενα
 \usepackage[nottoc,notlot,notlof]{tocbibind}
 
-% Πακέτο για Θεωρήματα
+% Πακέτα για Μαθηματικά
 \RequirePackage{amsmath}
 \RequirePackage{amsthm}
+\RequirePackage{latexsym}
+
+% Πακέτα για αλγορίθμους
+\RequirePackage{algorithmic}
+\RequirePackage[chapter]{algorithm}
 
 % Πακέτο για την δημιουργία hyperlinks
 \RequirePackage{hyperref}
@@ -86,6 +91,7 @@
 	%\renewcommand{\abstractname}{Περίληψη}
 	\renewcommand{\listfigurename}{Κατάλογος Σχημάτων}
 	\renewcommand{\listtablename}{Κατάλογος Πινάκων}
+	\renewcommand{\listalgorithmname}{Κατάλογος Αλγορίθμων}
 	%\renewcommand{\glossaryname}{Επεξηγήσεις Συμβολισμών}
 	%\renewcommand{\bibname}{Βιβλιογραφία}
 	%\renewcommand{\figurename}{Σχήμα}
@@ -93,7 +99,7 @@
 	%\renewcommand{\indexname}{Ευρετήριο}
 	%\renewcommand{\contentsname}{Περιεχόμενα}
 	%\renewcommand{\appendixname}{Παράρτημα}
-	%\floatname{algorithm}{Αλγόριθμος}
+	\floatname{algorithm}{Αλγόριθμος}
 
 	% amsthm
 	\theoremstyle{plain}   % definition, remark
@@ -147,6 +153,7 @@
 	\renewcommand{\abstractname}{Abstract}
 	\renewcommand{\listfigurename}{List of Figures}
 	\renewcommand{\listtablename}{List of Tables}
+	\renewcommand{\listalgorithmname}{List of Algorithms}
 	\renewcommand{\glossaryname}{Glossary}
 	\renewcommand{\bibname}{Bibliography}
 	\renewcommand{\figurename}{Figure}
@@ -154,7 +161,7 @@
 	\renewcommand{\indexname}{Index}
 	\renewcommand{\contentsname}{Table of Contents}
 	\renewcommand{\appendixname}{Appendix}
-	%\floatname{algorithm}{Algorithm}
+	\floatname{algorithm}{Algorithm}
 
 	% amsthm
 	\theoremstyle{plain}   % definition, remark

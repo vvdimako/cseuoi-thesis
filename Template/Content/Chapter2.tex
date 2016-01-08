@@ -226,6 +226,66 @@ template δεν αναφέρει τίποτα για τα περιεχόμενα
 \end{table}
 
 
+\section{Αλγόριθμοι}
+\label{sec:Algorithms}
+
+Για τη στοιχειοθεσία αλγορίθμων σε μορφή ψευδοκώδικα, όπως φαίνεται στον Αλγόριθμο~\ref{alg:Example} για παράδειγμα, χρησιμοποιούμε τις παρακάτω εντολές:
+
+\begin{verbatim}
+\begin{algorithm}[t]
+ \caption{Υπολογισμός $y = x^n$.}
+ \label{alg:Example}
+ \begin{algorithmic}[1]
+  \REQUIRE $n \geq 0 \vee x \neq 0$
+  \ENSURE $y = x^n$
+  \STATE $y \Leftarrow 1$
+  \IF{$n < 0$}
+  \STATE $X \Leftarrow 1 / x$
+  \STATE $N \Leftarrow -n$
+  \ELSE
+  \STATE $X \Leftarrow x$
+  \STATE $N \Leftarrow n$
+  \ENDIF
+  \WHILE{$N \neq 0$}
+  \IF{$N$ is even}
+  \STATE $X \Leftarrow X \times X$
+  \STATE $N \Leftarrow N / 2$
+  \ELSE[$N$ is odd]
+  \STATE $y \Leftarrow y \times X$
+  \STATE $N \Leftarrow N - 1$
+  \ENDIF
+  \ENDWHILE
+ \end{algorithmic}
+\end{algorithm}
+\end{verbatim}
+
+\begin{algorithm}[t]
+	\caption{Υπολογισμός $y = x^n$.}
+	\label{alg:Example}
+	\begin{algorithmic}[1]
+		\REQUIRE $n \geq 0 \vee x \neq 0$
+		\ENSURE $y = x^n$
+		\STATE $y \Leftarrow 1$
+		\IF{$n < 0$}
+		\STATE $X \Leftarrow 1 / x$
+		\STATE $N \Leftarrow -n$
+		\ELSE
+		\STATE $X \Leftarrow x$
+		\STATE $N \Leftarrow n$
+		\ENDIF
+		\WHILE{$N \neq 0$}
+		\IF{$N$ is even}
+		\STATE $X \Leftarrow X \times X$
+		\STATE $N \Leftarrow N / 2$
+		\ELSE[$N$ is odd]
+		\STATE $y \Leftarrow y \times X$
+		\STATE $N \Leftarrow N - 1$
+		\ENDIF
+		\ENDWHILE
+	\end{algorithmic}
+\end{algorithm}
+
+
 \section{Εξισώσεις}
 \label{sec:Equations}
 

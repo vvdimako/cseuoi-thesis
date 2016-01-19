@@ -11,14 +11,19 @@
 \DeclareOption{Master}{\PhDfalse}
 \DeclareOption{PhD}{\PhDtrue}
 
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 
 % Από default Ελληνικά και PhD
 \ExecuteOptions{Greek,PhD}
 
 \ProcessOptions\relax
 
-\LoadClass[a4paper,oneside]{report}
+\LoadClass[a4paper,oneside]{book}
+
+% Διαμόρφωση της κεφαλίδας και του υποσέλιδου
+\RequirePackage{fancyhdr}
+\pagestyle{empty}
+\fancyhf{}
 
 % Περιθώρια σελίδας
 \RequirePackage[nohead, top=2.5cm, bottom=3cm, left=2.5cm, right=2.5cm, marginparwidth=2.4cm, marginparsep=0.5mm]{geometry}

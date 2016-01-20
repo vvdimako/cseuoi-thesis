@@ -22,7 +22,7 @@
 
 % Διαμόρφωση της κεφαλίδας και του υποσέλιδου
 \RequirePackage{fancyhdr}
-\pagestyle{empty}
+\pagestyle{plain}
 \fancyhf{}
 
 % Περιθώρια σελίδας
@@ -42,11 +42,11 @@
 \setsansfont{DejaVuSans}
 \setmonofont{FreeMono}
 
-% Packages for figures
+% Πακέτα για σχήματα
 \RequirePackage{caption}
 \RequirePackage{subcaption}
 
-% Πακέτο για ευρετήριο όρων
+% Πακέτα για ευρετήριο όρων
 \RequirePackage[unbalanced]{idxlayout}
 \RequirePackage[original]{imakeidx}
 
@@ -79,7 +79,7 @@
 	\newcommand{\csedimosieuseis}{Δημοσιεύσεις Συγγραφέα}
 	\newcommand{\cseviografiko}{Σύντομο Βιογραφικό}
 	\newcommand{\cseparartima}{Παράρτημα}
-	
+
 	% Σελίδα περίληψης
 	\newcommand{\cseabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}
 	\newcommand{\cseabstractsup}{Επιβλέπων}
@@ -92,7 +92,7 @@
 		\newcommand{\cseextabstracttype}{M.Sc.}
 	\fi
 	\newcommand{\cseextabstract}{Extended Abstract}
-	\newcommand{\cseextabstractcs}{degree in Computer Science}
+	\newcommand{\cseextabstractcs}{in Computer Science}
 	\newcommand{\cseextabstractsup}{Advisor}
 	\newcommand{\cseextabstractdpt}{Department of Computer Science and Engineering, University of Ioannina, Greece}
 
@@ -135,17 +135,17 @@
 \else
 	% Use Latin numerals instead of Greek numerals
 	\nogreekalph
-	
+
 	\newcommand{\cseafierwsi}{Dedication}
 	\newcommand{\cseeuxaristies}{Acknowledgements}
 	\newcommand{\csedimosieuseis}{Author's Publications}
 	\newcommand{\cseviografiko}{Short Bio}
 	\newcommand{\cseparartima}{Appendix}
-	
+
 	% Σελίδα περίληψης
 	\newcommand{\cseabstractdpt}{Department of Computer Science and Engineering, University of Ioannina, Greece}
 	\newcommand{\cseabstractsup}{Advisor}
-	\newcommand{\cseabstractcs}{degree in Computer Science}
+	\newcommand{\cseabstractcs}{in Computer Science}
 	\ifPhD
 		\newcommand{\cseabstracttype}{Ph.D.}
 		\newcommand{\cseextabstracttype}{Δ.Δ.}

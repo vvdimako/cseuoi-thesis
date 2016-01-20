@@ -18,7 +18,7 @@
 
 \ProcessOptions\relax
 
-\LoadClass[a4paper,oneside]{book}
+\LoadClass[a4paper,oneside,12pt]{book}
 
 % Διαμόρφωση της κεφαλίδας και του υποσέλιδου
 \RequirePackage{fancyhdr}
@@ -36,6 +36,11 @@
 % http://www.mechpedia.gr/wiki/Hyphenation_-_%CE%A5%CF%86%CE%B5%CE%BD%CF%8E%CF%83%CE%B5%CE%B9%CF%82#xgreek_3
 \RequirePackage[Greek,Latin]{ucharclasses}
 \setTransitionsForGreek{\setlanguage{monogreek}}{\setlanguage{english}}
+
+% Γραμματοσειρές
+\setmainfont[Mapping=tex-text]{GFS Didot}
+\setsansfont{DejaVuSans}
+\setmonofont{FreeMono}
 
 % Packages for figures
 \RequirePackage{caption}

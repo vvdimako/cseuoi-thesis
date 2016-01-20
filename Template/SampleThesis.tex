@@ -4,21 +4,16 @@
 
 
 % Πακέτο για το χρωματισμό της σελίδας τίτλου
-% Αφού συμπληρώσετε τα στοιχεία μπορείτε να το αφαιρέσετε 
+% Αφού συμπληρώσετε τα στοιχεία μπορείτε να το αφαιρέσετε
 \usepackage[usenames]{xcolor}
 
-% Εμφανίζει τα περιθώρια. Χρήσιμο για την εύρεση overfull boxes.
+% Πακέτο για την εμφάνιση περιθωρίων (χρήσιμο για την εύρεση overfull boxes)
 %\usepackage{showframe}
 
 \usepackage{psfrag}
 \usepackage{pst-all}
 \usepackage{pst-node,pstricks}
 
-
-%%%%%%%%%%%% Some spaces %%%%%%%%%%%%%%%%%%%%%
-\def\yskip{\penalty-50\vskip3pt plus3pt minus2pt}
-\def\y{\yskip}
-\def\chl{\y\y\y\y\par\noindent}
 
 % Ευρετήριο όρων
 \makeindex[intoc]
@@ -79,8 +74,6 @@
 
 % Εισαγωγή του ευρετήριου πινάκων στα περιεχόμενα
 \addstarredchapter{\listtablename} % minitoc
-
-%\addcontentsline{toc}{Chapter}{\listtablename}
 
 % Κατάλογος Αλγορίθμων
 \listof{algorithm}{\listalgorithmname}

@@ -78,9 +78,6 @@
 \RequirePackage[unbalanced]{idxlayout}
 \RequirePackage[original]{imakeidx}
 
-% Πακέτο για εισαγωγή της βιβλιογραφίας στα περιεχόμενα
-\usepackage[nottoc,notlot,notlof]{tocbibind}
-
 % Πακέτα για Μαθηματικά
 \RequirePackage{amsmath}
 \RequirePackage{amsthm}
@@ -99,6 +96,7 @@
 \setlength{\mtcindent}{-10pt}
 %\mtcsettitle{minitoc}{Description of contents}
 \nomtcpagenumbers  % remove page numbers from minitocs
+\newcommand{\addstarredchapterc}[1]{\cleardoublepage\phantomsection\addstarredchapter{#1}}
 
 
 \ifgreek

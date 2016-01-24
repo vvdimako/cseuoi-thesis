@@ -69,23 +69,23 @@
 \pdfbookmark[1]{\contentsname}{contents} % hyperref
 \tableofcontents
 
+% Εισαγωγή του ευρετήριου σχημάτων στα περιεχόμενα
+\addstarredchapterc{\listfigurename} % minitoc
+
 % Κατάλογος Σχημάτων
 \listoffigures
 
-% Εισαγωγή του ευρετήριου σχημάτων στα περιεχόμενα
-\addstarredchapter{\listfigurename} % minitoc
+% Εισαγωγή του ευρετήριου πινάκων στα περιεχόμενα
+\addstarredchapterc{\listtablename} % minitoc
 
 % Κατάλογος Πινάκων
 \listoftables
 
-% Εισαγωγή του ευρετήριου πινάκων στα περιεχόμενα
-\addstarredchapter{\listtablename} % minitoc
+% Εισαγωγή του ευρετήριου αλγορίθμων στα περιεχόμενα
+\addstarredchapterc{\listalgorithmname} % minitoc
 
 % Κατάλογος Αλγορίθμων
 \listof{algorithm}{\listalgorithmname}
-
-% Εισαγωγή του ευρετήριου αλγορίθμων στα περιεχόμενα
-\addstarredchapter{\listalgorithmname} % minitoc
 
 \include{FrontMatter/[Optional]Glossary} % Προαιρετικό
 
@@ -99,6 +99,11 @@
 % Εισαγωγή των κεφαλαίων
 \include{Content/Chapter1}
 \include{Content/Chapter2}
+
+
+
+% Εισαγωγή της βιβλιογραφίας στα περιεχόμενα
+\addstarredchapterc{\bibname} % minitoc
 
 % Εισαγωγή της βιβλιογραφίας
 \bibliographystyle{ieeetr}

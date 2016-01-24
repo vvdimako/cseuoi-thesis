@@ -335,7 +335,9 @@
     %\hrule                                           % horizontal rule
     \nobreak
     \vskip 40\p@
-  }}
+  }
+  \minitoc
+}
 
 % Unnumbered chapter heading style:
 

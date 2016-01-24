@@ -1,7 +1,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cseuoi-thesis}[2015/09/11 v1.0.0 Official MSc and PhD (Xe)LaTeX thesis template for the CSE Department, University of Ioannina]
 
-% Ελληνικά ή αγγλικά
+% Ελληνικά ή Αγγλικά
 \newif\ifgreek
 \DeclareOption{English}{\greekfalse}
 \DeclareOption{Greek}{\greektrue}

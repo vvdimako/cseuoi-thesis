@@ -97,6 +97,7 @@
 %\mtcsettitle{minitoc}{Description of contents}
 \nomtcpagenumbers  % remove page numbers from minitocs
 \newcommand{\addstarredchapterc}[1]{\cleardoublepage\phantomsection\addstarredchapter{#1}}
+\renewcommand{\afterminitoc}{\@afterindentfalse\@afterheading} % fix identation of first paragraph
 
 
 \ifgreek

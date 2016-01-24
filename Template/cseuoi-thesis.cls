@@ -6,10 +6,35 @@
 \DeclareOption{English}{\greekfalse}
 \DeclareOption{Greek}{\greektrue}
 
-% Master ή PhD
+% MSc ή PhD
 \newif\ifPhD
-\DeclareOption{Master}{\PhDfalse}
+\DeclareOption{MSc}{\PhDfalse}
 \DeclareOption{PhD}{\PhDtrue}
+
+% Εξειδίκευση (μόνο για MSc)
+\newcommand{\EkseidikseusiGr}{\colorbox{gray}{ΣΤΗ ΘΕΩΡΙΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ}}
+\newcommand{\EkseidikseusiEn}{\colorbox{gray}{IN COMPUTER SCIENCE THEORY}}
+
+\DeclareOption{Y}{
+	\renewcommand{\EkseidikseusiGr}{ΣΤΑ ΥΠΟΛΟΓΙΣΤΙΚΑ ΣΥΣΤΗΜΑΤΑ}
+	\renewcommand{\EkseidikseusiEn}{IN COMPUTER SYSTEMS}
+}
+\DeclareOption{TH}{
+	\renewcommand{\EkseidikseusiGr}{ΣΤΗ ΘΕΩΡΙΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ}
+	\renewcommand{\EkseidikseusiEn}{IN COMPUTER SCIENCE THEORY}
+}
+\DeclareOption{L}{
+	\renewcommand{\EkseidikseusiGr}{ΣΤΟ ΛΟΓΙΣΜΙΚΟ}
+	\renewcommand{\EkseidikseusiEn}{IN SOFTWARE}
+}
+\DeclareOption{E}{
+	\renewcommand{\EkseidikseusiGr}{ΣΤΟΥΣ ΕΠΙΣΤΗΜΟΝΙΚΟΥΣ ΥΠΟΛΟΓΙΣΜΟΥΣ}
+	\renewcommand{\EkseidikseusiEn}{IN SCIENTIFIC COMPUTING}
+}
+\DeclareOption{T}{
+	\renewcommand{\EkseidikseusiGr}{ΣΤΙΣ ΤΕΧΝΟΛΟΓΙΕΣ - ΕΦΑΡΜΟΓΕΣ}
+	\renewcommand{\EkseidikseusiEn}{IN TECHNOLOGIES - APPLICATIONS}
+}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 
@@ -41,6 +66,9 @@
 \setmainfont[Mapping=tex-text]{GFS Didot}
 \setsansfont{DejaVuSans}
 \setmonofont{FreeMono}
+
+% Πακέτο για χρωματισμό
+\RequirePackage[usenames]{xcolor}
 
 % Πακέτα για σχήματα
 \RequirePackage{caption}
@@ -198,19 +226,55 @@
 \fi
 
 \ifPhD
-	\newcommand{\csethesisTypeEl}{ΔΙΔΑΚΤΟΡΙΚΗ ΔΙΑΤΡΙΒΗ}
-	\newcommand{\csediplwmaEl}{ΔΙΔΑΚΤΟΡΙΚΟΥ ΔΙΠΛΩΜΑΤΟΣ}
-	\newcommand{\csethesisTypeEn}{Ph.D. DISSERTATION}
-	\newcommand{\csediplwmaEn}{DOCTOR OF PHILOSOPHY}
+	\newcommand{\csethesisTypeGr}{Διδακτορική Διατριβή}
+	\newcommand{\csediplwmaGr}{Διδακτορικού Διπλώματος}
+	\newcommand{\csethesisTypeEn}{Ph.D. Dissertation}
+	\newcommand{\csediplwmaEn}{Doctor of Philosophy}
 \else
-	\newcommand{\csethesisTypeEl}{ΜΕΤΑΠΤΥΧΙΑΚΗ ΕΡΓΑΣΙΑ ΕΞΕΙΔΙΚΕΥΣΗΣ}
-	\newcommand{\csediplwmaEl}{ΜΕΤΑΠΤΥΧΙΑΚΟΥ ΔΙΠΛΩΜΑΤΟΣ ΕΙΔΙΚΕΥΣΗΣ}
-	\newcommand{\csethesisTypeEn}{MASTER'S THESIS}
-	\newcommand{\csediplwmaEn}{MASTER OF SCIENCE}
+	\newcommand{\csethesisTypeGr}{Μεταπτυχιακή Εργασία Εξειδίκευσης}
+	\newcommand{\csediplwmaGr}{Μεταπτυχιακού Διπλώματος Ειδίκευσης}
+	\newcommand{\csethesisTypeEn}{Master's Thesis}
+	\newcommand{\csediplwmaEn}{Master of Science}
 \fi
 
+\newcommand{\titleGr}[1]{\def\@titleGr{#1}}
+\newcommand{\titleEn}[1]{\def\@titleEn{#1}}
+\newcommand{\authorGr}[1]{\def\@authorGr{#1}}
+\newcommand{\authorEn}[1]{\def\@authorEn{#1}}
 \newcommand{\Arthro}[1]{\def\@Arthro{#1}}
-\newcommand{\Ekseidikseusi}[1]{\def\@Ekseidikseusi{#1}}
+\newcommand{\Aitiatiki}[1]{\def\@Aitiatiki{#1}}
+\newcommand{\dateGr}[1]{\def\@dateGr{#1}}
+\newcommand{\dateEn}[1]{\def\@dateEn{#1}}
+\newcommand{\advisorGr}[1]{\def\@advisorGr{#1}}
+\newcommand{\advisorEn}[1]{\def\@advisorEn{#1}}
+
+\ifgreek
+	\title{\@titleGr}
+	\author{\@authorGr}
+	\date{\@dateGr}
+	\newcommand{\advisor}{\@advisorGr}
+	\newcommand{\csethesisType}{\csethesisTypeGr}
+	\newcommand{\Ekseidikseusi}{\EkseidikseusiGr}
+	\newcommand{\titleBilingual}{\@titleEn}
+	\newcommand{\authorBilingual}{\@authorEn}
+	\newcommand{\dateBilingual}{\@dateEn}
+	\newcommand{\advisorBilingual}{\@advisorEn}
+	\newcommand{\csethesisTypeBilingual}{\csethesisTypeEn}
+	\newcommand{\EkseidikseusiBilingual}{\EkseidikseusiEn}
+\else
+	\title{\@titleEn}
+	\author{\@authorEn}
+	\date{\@dateEn}
+	\newcommand{\advisor}{\@advisorEn}
+	\newcommand{\csethesisType}{\csethesisTypeEn}
+	\newcommand{\Ekseidikseusi}{\EkseidikseusiEn}
+	\newcommand{\titleBilingual}{\@titleGr}
+	\newcommand{\authorBilingual}{\@authorGr}
+	\newcommand{\dateBilingual}{\@dateGr}
+	\newcommand{\advisorBilingual}{\@advisorGr}
+	\newcommand{\csethesisTypeBilingual}{\csethesisTypeGr}
+	\newcommand{\EkseidikseusiBilingual}{\EkseidikseusiGr}
+\fi
 
 % Δημιουργία τίτλου
 \renewcommand{\maketitle}{

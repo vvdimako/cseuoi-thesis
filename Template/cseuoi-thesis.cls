@@ -77,6 +77,7 @@
 % Πακέτα για ευρετήριο όρων
 \RequirePackage[unbalanced]{idxlayout}
 \RequirePackage[original]{imakeidx}
+\makeindex[intoc]
 
 % Πακέτα για Μαθηματικά
 \RequirePackage{amsmath}

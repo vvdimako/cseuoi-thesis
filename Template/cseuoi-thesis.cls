@@ -3,43 +3,43 @@
 
 % Ελληνικά ή Αγγλικά
 \newif\ifgreek
-\DeclareOption{English}{\greekfalse}
-\DeclareOption{Greek}{\greektrue}
+\DeclareOption{en}{\greekfalse}
+\DeclareOption{gr}{\greektrue}
 
-% MSc ή PhD
+% Διδακτορικό ή Μεταπτυχιακό
 \newif\ifPhD
-\DeclareOption{MSc}{\PhDfalse}
-\DeclareOption{PhD}{\PhDtrue}
+\DeclareOption{msc}{\PhDfalse}
+\DeclareOption{phd}{\PhDtrue}
 
-% Εξειδίκευση (μόνο για MSc)
-\newcommand{\EkseidikseusiGr}{\colorbox{gray}{ΣΤΗ ΘΕΩΡΙΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ}}
-\newcommand{\EkseidikseusiEn}{\colorbox{gray}{IN COMPUTER SCIENCE THEORY}}
+% Εξειδίκευση (μόνο για Μεταπτυχιακό)
+\newcommand{\ekseidikseusiGr}{\colorbox{gray}{ΣΤΑ ΥΠΟΛΟΓΙΣΤΙΚΑ ΣΥΣΤΗΜΑΤΑ}}
+\newcommand{\ekseidikseusiEn}{\colorbox{gray}{IN COMPUTER SYSTEMS}}
 
-\DeclareOption{Y}{
-	\renewcommand{\EkseidikseusiGr}{ΣΤΑ ΥΠΟΛΟΓΙΣΤΙΚΑ ΣΥΣΤΗΜΑΤΑ}
-	\renewcommand{\EkseidikseusiEn}{IN COMPUTER SYSTEMS}
+\DeclareOption{systems}{
+	\renewcommand{\ekseidikseusiGr}{ΣΤΑ ΥΠΟΛΟΓΙΣΤΙΚΑ ΣΥΣΤΗΜΑΤΑ}
+	\renewcommand{\ekseidikseusiEn}{IN COMPUTER SYSTEMS}
 }
-\DeclareOption{TH}{
-	\renewcommand{\EkseidikseusiGr}{ΣΤΗ ΘΕΩΡΙΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ}
-	\renewcommand{\EkseidikseusiEn}{IN COMPUTER SCIENCE THEORY}
+\DeclareOption{theory}{
+	\renewcommand{\ekseidikseusiGr}{ΣΤΗ ΘΕΩΡΙΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ}
+	\renewcommand{\ekseidikseusiEn}{IN COMPUTER SCIENCE THEORY}
 }
-\DeclareOption{L}{
-	\renewcommand{\EkseidikseusiGr}{ΣΤΟ ΛΟΓΙΣΜΙΚΟ}
-	\renewcommand{\EkseidikseusiEn}{IN SOFTWARE}
+\DeclareOption{software}{
+	\renewcommand{\ekseidikseusiGr}{ΣΤΟ ΛΟΓΙΣΜΙΚΟ}
+	\renewcommand{\ekseidikseusiEn}{IN SOFTWARE}
 }
-\DeclareOption{E}{
-	\renewcommand{\EkseidikseusiGr}{ΣΤΟΥΣ ΕΠΙΣΤΗΜΟΝΙΚΟΥΣ ΥΠΟΛΟΓΙΣΜΟΥΣ}
-	\renewcommand{\EkseidikseusiEn}{IN SCIENTIFIC COMPUTING}
+\DeclareOption{scicomp}{
+	\renewcommand{\ekseidikseusiGr}{ΣΤΟΥΣ ΕΠΙΣΤΗΜΟΝΙΚΟΥΣ ΥΠΟΛΟΓΙΣΜΟΥΣ}
+	\renewcommand{\ekseidikseusiEn}{IN SCIENTIFIC COMPUTING}
 }
-\DeclareOption{T}{
-	\renewcommand{\EkseidikseusiGr}{ΣΤΙΣ ΤΕΧΝΟΛΟΓΙΕΣ - ΕΦΑΡΜΟΓΕΣ}
-	\renewcommand{\EkseidikseusiEn}{IN TECHNOLOGIES - APPLICATIONS}
+\DeclareOption{techapps}{
+	\renewcommand{\ekseidikseusiGr}{ΣΤΙΣ ΤΕΧΝΟΛΟΓΙΕΣ - ΕΦΑΡΜΟΓΕΣ}
+	\renewcommand{\ekseidikseusiEn}{IN TECHNOLOGIES - APPLICATIONS}
 }
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 
-% Από default Ελληνικά και PhD
-\ExecuteOptions{Greek,PhD}
+% Ορίζουμε ως προεπιλογή Ελληνικά και Διδακτορικό
+\ExecuteOptions{gr,phd}
 
 \ProcessOptions\relax
 
@@ -65,7 +65,10 @@
 % Γραμματοσειρές
 \setmainfont[Mapping=tex-text]{GFS Didot}
 \setsansfont{DejaVuSans}
-\setmonofont{FreeMono}
+\setmonofont[Scale=0.95]{Ubuntu Mono}
+
+% Eλάχιστη απόσταση μεταξύ δύο γραμμών
+\renewcommand{\baselinestretch}{1.3}
 
 % Πακέτο για χρωματισμό
 \RequirePackage[usenames]{xcolor}
@@ -88,7 +91,7 @@
 \RequirePackage{algorithmic}
 \RequirePackage[chapter]{algorithm}
 
-% Πακέτο για την δημιουργία hyperlinks
+% Πακέτο για τη δημιουργία hyperlinks
 \RequirePackage{hyperref}
 
 % Δημιουργία μίνι ευρετηρίου στην αρχή κάθε κεφάλαιου
@@ -101,7 +104,7 @@
 \renewcommand{\afterminitoc}{\hrule width\textwidth\@afterindentfalse\@afterheading} % fix identation of first paragraph
 \nomtcrule
 \let\origminitoc\minitoc
-\renewcommand{\minitoc}{\hrule width\textwidth\origminitoc\vspace{0.2in}}
+\renewcommand{\minitoc}{\hrule width\textwidth\origminitoc\vspace{2\baselineskip}}
 
 
 \ifgreek
@@ -170,7 +173,7 @@
 	\newcommand{\cseafierwsi}{Dedication}
 	\newcommand{\cseeuxaristies}{Acknowledgements}
 	\newcommand{\csedimosieuseis}{Author's Publications}
-	\newcommand{\cseviografiko}{Short Bio}
+	\newcommand{\cseviografiko}{Short Biography}
 	\newcommand{\cseparartima}{Appendix}
 
 	% Σελίδα περίληψης
@@ -231,12 +234,12 @@
 \ifPhD
 	\newcommand{\csethesisTypeGr}{Διδακτορική Διατριβή}
 	\newcommand{\csediplwmaGr}{Διδακτορικού Διπλώματος}
-	\newcommand{\csethesisTypeEn}{Ph.D. Dissertation}
+	\newcommand{\csethesisTypeEn}{Dissertation}
 	\newcommand{\csediplwmaEn}{Doctor of Philosophy}
 \else
 	\newcommand{\csethesisTypeGr}{Μεταπτυχιακή Εργασία Εξειδίκευσης}
 	\newcommand{\csediplwmaGr}{Μεταπτυχιακού Διπλώματος Ειδίκευσης}
-	\newcommand{\csethesisTypeEn}{Master's Thesis}
+	\newcommand{\csethesisTypeEn}{Thesis}
 	\newcommand{\csediplwmaEn}{Master of Science}
 \fi
 
@@ -244,8 +247,8 @@
 \newcommand{\titleEn}[1]{\def\@titleEn{#1}}
 \newcommand{\authorGr}[1]{\def\@authorGr{#1}}
 \newcommand{\authorEn}[1]{\def\@authorEn{#1}}
-\newcommand{\Arthro}[1]{\def\@Arthro{#1}}
-\newcommand{\Aitiatiki}[1]{\def\@Aitiatiki{#1}}
+\newcommand{\arthro}[1]{\def\@arthro{#1}}
+\newcommand{\aitiatiki}[1]{\def\@aitiatiki{#1}}
 \newcommand{\dateGr}[1]{\def\@dateGr{#1}}
 \newcommand{\dateEn}[1]{\def\@dateEn{#1}}
 \newcommand{\advisorGr}[1]{\def\@advisorGr{#1}}
@@ -257,26 +260,26 @@
 	\date{\@dateGr}
 	\newcommand{\advisor}{\@advisorGr}
 	\newcommand{\csethesisType}{\csethesisTypeGr}
-	\newcommand{\Ekseidikseusi}{\EkseidikseusiGr}
+	\newcommand{\ekseidikseusi}{\ekseidikseusiGr}
 	\newcommand{\titleBilingual}{\@titleEn}
 	\newcommand{\authorBilingual}{\@authorEn}
 	\newcommand{\dateBilingual}{\@dateEn}
 	\newcommand{\advisorBilingual}{\@advisorEn}
 	\newcommand{\csethesisTypeBilingual}{\csethesisTypeEn}
-	\newcommand{\EkseidikseusiBilingual}{\EkseidikseusiEn}
+	\newcommand{\ekseidikseusiBilingual}{\ekseidikseusiEn}
 \else
 	\title{\@titleEn}
 	\author{\@authorEn}
 	\date{\@dateEn}
 	\newcommand{\advisor}{\@advisorEn}
 	\newcommand{\csethesisType}{\csethesisTypeEn}
-	\newcommand{\Ekseidikseusi}{\EkseidikseusiEn}
+	\newcommand{\ekseidikseusi}{\ekseidikseusiEn}
 	\newcommand{\titleBilingual}{\@titleGr}
 	\newcommand{\authorBilingual}{\@authorGr}
 	\newcommand{\dateBilingual}{\@dateGr}
 	\newcommand{\advisorBilingual}{\@advisorGr}
 	\newcommand{\csethesisTypeBilingual}{\csethesisTypeGr}
-	\newcommand{\EkseidikseusiBilingual}{\EkseidikseusiGr}
+	\newcommand{\ekseidikseusiBilingual}{\ekseidikseusiGr}
 \fi
 
 % Δημιουργία τίτλου
@@ -284,23 +287,11 @@
 	\begin{center}
 		\ifgreek
 			\input{FrontMatter/GreekTitlePage}
-			%\input{FrontMatter/EnglishTitlePage}
 		\else
 			\input{FrontMatter/EnglishTitlePage}
-			%\input{FrontMatter/GreekTitlePage}
 		\fi
 	\end{center}
 }
-
-% Διάστιχο 
-\renewcommand{\baselinestretch}{1.3}
-
-%\newcommand{\ps@mythesis}{
-%    \renewcommand{\@oddhead}{\hfill \chaptername \thechapter}
-%    \renewcommand{\@evenhead}{\chaptername \thechapter \hfill}
-%    \renewcommand{\@oddfoot}{\hfill - \thepage\ - \hfill}
-%    \renewcommand{\@evenfoot}{\hfill - \thepage\ - \hfill}
-%}
 
 
 

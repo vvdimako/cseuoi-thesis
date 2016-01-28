@@ -1,19 +1,19 @@
 % Περάστε στο πακέτο cseuoi-thesis τις κατάλληλες επιλογές για τη διατριβή σας
-\documentclass[Greek,PhD]{cseuoi-thesis} % Διδακτορικό (στα Ελληνικά)
-%\documentclass[English,MSc,Y]{cseuoi-thesis} % Μεταπτυχιακό με εξειδίκευση στα Υπολογιστικά Συστήματα (στα Αγγλικά)
-%\documentclass[English,MSc,TH]{cseuoi-thesis} % Μεταπτυχιακό με εξειδίκευση στη Θεωρία Επιστήμης Υπολογιστών (στα Αγγλικά)
-%\documentclass[English,MSc,L]{cseuoi-thesis} % Μεταπτυχιακό με εξειδίκευση στο Λογισμικό (στα Αγγλικά)
-%\documentclass[English,MSc,E]{cseuoi-thesis} % Μεταπτυχιακό με εξειδίκευση στους Επιστημονικούς Υπολογισμούς (στα Αγγλικά)
-%\documentclass[English,MSc,T]{cseuoi-thesis} % Μεταπτυχιακό με εξειδίκευση στις Τεχνολογίες - Εφαρμογές (στα Αγγλικά)
+\documentclass[gr,phd]{cseuoi-thesis} % Διδακτορικό (στα Ελληνικά)
+%\documentclass[en,msc,systems]{cseuoi-thesis} % Μεταπτυχιακό με εξειδίκευση στα Υπολογιστικά Συστήματα (στα Αγγλικά)
+%\documentclass[en,msc,theory]{cseuoi-thesis} % Μεταπτυχιακό με εξειδίκευση στη Θεωρία Επιστήμης Υπολογιστών (στα Αγγλικά)
+%\documentclass[en,msc,software]{cseuoi-thesis} % Μεταπτυχιακό με εξειδίκευση στο Λογισμικό (στα Αγγλικά)
+%\documentclass[en,msc,scicomp]{cseuoi-thesis} % Μεταπτυχιακό με εξειδίκευση στους Επιστημονικούς Υπολογισμούς (στα Αγγλικά)
+%\documentclass[en,msc,techapps]{cseuoi-thesis} % Μεταπτυχιακό με εξειδίκευση στις Τεχνολογίες - Εφαρμογές (στα Αγγλικά)
 
 
 % Συμπληρώστε τα στοιχεία σας στις παρακάτω εντολές (αφαιρώντας το \colorbox{gray}{})
 \titleGr{\colorbox{gray}{Τίτλος Διατριβής}}
 \titleEn{\colorbox{gray}{Thesis Title}}
-\authorGr{\colorbox{gray}{Ιωάννης Παπαδόπουλος}}
-\authorEn{\colorbox{gray}{Ioannis Papadopoulos}}
-\Arthro{\colorbox{gray}{τον}}
-\Aitiatiki{\colorbox{gray}{Ιωάννη Παπαδόπουλο}}
+\authorGr{\colorbox{gray}{Λεωνίδας Παπαδόπουλος}}
+\authorEn{\colorbox{gray}{Leonidas Papadopoulos}}
+\arthro{\colorbox{gray}{τον}}
+\aitiatiki{\colorbox{gray}{Λεωνίδα Παπαδόπουλο}}
 \dateGr{\colorbox{gray}{Φεβρουάριος 2016}}
 \dateEn{\colorbox{gray}{February 2016}}
 \advisorGr{\colorbox{gray}{Γεώργιος Νικολαΐδης, Επίκουρος Καθηγητής}}
@@ -50,8 +50,8 @@
 % Αρχικοποίηση του minitoc
 \dominitoc[n]
 
-\include{FrontMatter/[Optional]Dedication} % Προαιρετικό
-\include{FrontMatter/[Optional]Acknowledgements} % Προαιρετικό
+\include{FrontMatter/Dedication} % Προαιρετικό
+\include{FrontMatter/Acknowledgements} % Προαιρετικό
 
 
 % i, ii, iii, iv, ...
@@ -79,7 +79,7 @@
 % Κατάλογος Αλγορίθμων
 \listof{algorithm}{\listalgorithmname}
 
-\include{FrontMatter/[Optional]Glossary} % Προαιρετικό
+\include{FrontMatter/Glossary} % Προαιρετικό
 
 \include{FrontMatter/Abstract}
 \include{FrontMatter/ExtendedAbstract}
@@ -103,9 +103,9 @@
 
 % Προαιρετικά, μπορείτε να εισάγετε παραρτήματα
 \appendix
-\include{Content/[Optional]AppendixA}
-\include{Content/[Optional]AppendixB}
-\include{Content/[Optional]AppendixC}
+\include{Content/AppendixA}
+\include{Content/AppendixB}
+\include{Content/AppendixC}
 
 % Εκτύπωση του ευρετηρίου
 \printindex
@@ -114,9 +114,9 @@
 % Σελίδες χωρίς αρίθμηση
 \pagenumbering{gobble}
 
-\include{BackMatter/[Optional]AuthorsPublications} % Προαιρετικό
+\include{BackMatter/AuthorsPublications} % Προαιρετικό
 
 % Σύντομο Βιογραφικό
-\include{BackMatter/ShortBio}
+\include{BackMatter/ShortBiography}
 
 \end{document}

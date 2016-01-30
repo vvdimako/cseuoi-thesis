@@ -51,38 +51,33 @@
 \include{FrontMatter/Acknowledgements} % Προαιρετικό
 
 
-% i, ii, iii, iv, ...
+% Σελίδες με αρίθμηση i, ii, iii, iv, ...
 \pagenumbering{roman}
 
 % Περιεχόμενα
 \pdfbookmark[1]{\contentsname}{contents} % hyperref
 \tableofcontents
 
-% Εισαγωγή του ευρετήριου σχημάτων στα περιεχόμενα
-\addstarredchapterc{\listfigurename} % minitoc
-
 % Κατάλογος Σχημάτων
+\addstarredchapterc{\listfigurename} % minitoc
 \listoffigures
 
-% Εισαγωγή του ευρετήριου πινάκων στα περιεχόμενα
-\addstarredchapterc{\listtablename} % minitoc
-
 % Κατάλογος Πινάκων
+\addstarredchapterc{\listtablename} % minitoc
 \listoftables
 
-% Εισαγωγή του ευρετήριου αλγορίθμων στα περιεχόμενα
-\addstarredchapterc{\listalgorithmname} % minitoc
-
 % Κατάλογος Αλγορίθμων
+\addstarredchapterc{\listalgorithmname} % minitoc
 \listof{algorithm}{\listalgorithmname}
 
 \include{FrontMatter/Glossary} % Προαιρετικό
 
+% Περίληψη και εκτεταμένη περίληψη
 \include{FrontMatter/Abstract}
 \include{FrontMatter/ExtendedAbstract}
 
 
-% 1, 2, 3, 4, ...
+% Σελίδες με αρίθμηση 1, 2, 3, 4, ...
 \pagenumbering{arabic}
 
 % Εισαγωγή των κεφαλαίων
@@ -90,11 +85,8 @@
 \include{Content/Chapter2}
 
 
-
-% Εισαγωγή της βιβλιογραφίας στα περιεχόμενα
-\addstarredchapterc{\bibname} % minitoc
-
 % Εισαγωγή της βιβλιογραφίας
+\addstarredchapterc{\bibname} % minitoc
 \bibliographystyle{ieeetr}
 \bibliography{Content/Bibliography}
 
@@ -103,6 +95,7 @@
 \include{Content/AppendixA}
 \include{Content/AppendixB}
 \include{Content/AppendixC}
+
 
 % Εκτύπωση του ευρετηρίου
 \printindex

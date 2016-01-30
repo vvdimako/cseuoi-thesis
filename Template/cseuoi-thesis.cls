@@ -85,6 +85,7 @@
 % Πακέτα για Μαθηματικά
 \RequirePackage{amsmath}
 \RequirePackage{amsthm}
+\RequirePackage{amssymb}
 \RequirePackage{latexsym}
 
 % Πακέτα για αλγορίθμους

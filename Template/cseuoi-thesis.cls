@@ -373,6 +373,27 @@
     \clearpage
 }
 
+\newcommand{\makecseabstract}{
+	\makeatletter
+	\@author, \cseabstracttype\ifPhD\else\ \cseabstractcs\fi, \cseabstractdpt, \@date.\\
+	\@title.\\
+	\cseabstractsup: \advisor.
+	\makeatother
+
+	\bigskip
+	\bigskip
+}
+
+\newcommand{\makecseextabstract}{
+	\makeatletter
+	\authorBilingual, \cseextabstracttype\ifPhD\else\ \cseextabstractcs\fi, \cseextabstractdpt, \dateBilingual.\\
+	\titleBilingual.\\
+	\cseextabstractsup: \advisorBilingual.
+	\makeatother
+
+	\bigskip
+	\bigskip
+}
 
 
 

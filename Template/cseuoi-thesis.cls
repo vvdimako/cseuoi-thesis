@@ -282,15 +282,94 @@
 	\newcommand{\ekseidikseusiBilingual}{\ekseidikseusiGr}
 \fi
 
-% Δημιουργία τίτλου
+
+% Δημιουργία της σελίδας τίτλου
 \renewcommand{\maketitle}{
 	\begin{center}
 		\ifgreek
-			\input{FrontMatter/GreekTitlePage}
+			\makegreektitle
 		\else
-			\input{FrontMatter/EnglishTitlePage}
+			\makeenglishtitle
 		\fi
 	\end{center}
+}
+
+
+% Δημιουργία της σελίδας τίτλου στα Ελληνικά
+\newcommand{\makegreektitle}{
+    \makeatletter
+
+    {\LARGE \@titleGr}
+
+    {\Large
+        \vfill \vfill   Η \csethesisTypeGr
+
+        \vfill          υποβάλλεται στην ορισθείσα
+
+                        από τη Γενική Συνέλευση Ειδικής Σύνθεσης
+
+                        του Τμήματος Μηχανικών Η/Υ και Πληροφορικής
+
+                        Εξεταστική Επιτροπή
+
+        \vfill          από \@arthro
+
+        \vfill          {\LARGE \@aitiatiki}
+
+        \vfill          ως μέρος των υποχρεώσεων για την απόκτηση του
+
+        \vfill          \MakeUppercase{\csediplwmaGr}
+
+        \ifPhD\else     ΣΤΗΝ ΠΛΗΡΟΦΟΡΙΚΗ
+
+        \vspace{1em}    ΜΕ ΕΞΕΙΔΙΚΕΥΣΗ
+
+                        \ekseidikseusiGr
+        \fi
+
+        \vfill \vfill   \@dateGr
+    }
+
+    \makeatother
+    \clearpage
+}
+
+
+% Δημιουργία της σελίδας τίτλου στα Αγγλικά
+\newcommand{\makeenglishtitle}{
+    \makeatletter
+
+    {\LARGE \@titleEn}
+
+    {\Large
+        \vfill \vfill   A \csethesisTypeEn
+
+        \vfill          submitted to the designated
+
+                        by the General Assembly of Special Composition
+
+                        of the Department of Computer Science and Engineering
+
+                        Examination Committee
+
+        \vfill          by
+
+        \vfill          {\LARGE \@authorEn}
+
+        \vfill          in partial fulfillment of the requirements for the degree of
+
+        \vfill          \MakeUppercase{\csediplwmaEn}\ifPhD\else\ IN COMPUTER SCIENCE
+
+        \vspace{1em}    WITH SPECIALIZATION
+
+                        \ekseidikseusiEn
+        \fi
+
+        \vfill \vfill   \@dateEn
+    }
+
+    \makeatother
+    \clearpage
 }
 
 

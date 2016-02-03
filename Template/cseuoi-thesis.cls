@@ -65,7 +65,13 @@
 % Γραμματοσειρές
 \setmainfont[Mapping=tex-text]{GFS Didot}
 \setsansfont{DejaVuSans}
-\setmonofont[Scale=0.95]{Ubuntu Mono}
+\setmonofont[Path = font/,
+	UprightFont    = *-R,
+	BoldFont       = *-B,
+	ItalicFont     = *-RI,
+	BoldItalicFont = *-BI,
+	Scale          = 0.95
+]{UbuntuMono}
 
 % Eλάχιστη απόσταση μεταξύ δύο γραμμών
 \renewcommand{\baselinestretch}{1.3}

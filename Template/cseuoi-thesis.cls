@@ -174,6 +174,9 @@
 	\theoremstyle{plain}  % definition, remark
 	\newtheorem{observation}{Παρατήρηση}[chapter]
 \else
+	%Αρχικοποίηση της γλώσσας του hyphenation.
+	\setlanguage{english}
+	
 	% Use Latin numerals instead of Greek numerals
 	\nogreekalph
 

@@ -65,7 +65,7 @@
 % Γραμματοσειρές
 \setmainfont[Mapping=tex-text]{GFS Didot}
 \setsansfont{DejaVuSans}
-\setmonofont[Path = font/,
+\setmonofont[Path = Font/,
 	UprightFont    = *-R,
 	BoldFont       = *-B,
 	ItalicFont     = *-RI,

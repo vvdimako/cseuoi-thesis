@@ -93,6 +93,7 @@
 \RequirePackage{amsthm}
 \RequirePackage{amssymb}
 \RequirePackage{latexsym}
+\RequirePackage{mathtools}
 
 % Πακέτα για αλγορίθμους
 \RequirePackage{algorithmic}

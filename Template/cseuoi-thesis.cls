@@ -175,9 +175,9 @@
 	\theoremstyle{plain}  % definition, remark
 	\newtheorem{observation}{Παρατήρηση}[chapter]
 \else
-	%Αρχικοποίηση της γλώσσας του hyphenation.
+	% Αρχικοποίηση της γλώσσας του hyphenation
 	\setlanguage{english}
-	
+
 	% Use Latin numerals instead of Greek numerals
 	\nogreekalph
 
@@ -393,6 +393,8 @@
     \clearpage
 }
 
+
+% Δημιουργία της κεφαλίδας για την περίληψη
 \newcommand{\makecseabstract}{
 	\makeatletter
 	\@author, \cseabstracttype\ifPhD\else\ \cseabstractcs\fi, \cseabstractdpt, \@date.\\
@@ -404,6 +406,8 @@
 	\bigskip
 }
 
+
+% Δημιουργία της κεφαλίδας για την εκτεταμένη περίληψη
 \newcommand{\makecseextabstract}{
 	\makeatletter
 	\authorBilingual, \cseextabstracttype\ifPhD\else\ \cseextabstractcs\fi, \cseextabstractdpt, \dateBilingual.\\

@@ -348,7 +348,9 @@
                         \ekseidikseusiGr
         \fi
 
-        \vfill \vfill   \@dateGr
+        \vfill \vfill   Πανεπιστήμιο Ιωαννίνων
+       
+                        \@dateGr\par
     }
 
     \makeatother
@@ -386,7 +388,9 @@
                         \ekseidikseusiEn
         \fi
 
-        \vfill \vfill   \@dateEn
+        \vfill \vfill   University of Ioannina
+        
+                        \@dateEn\par
     }
 
     \makeatother

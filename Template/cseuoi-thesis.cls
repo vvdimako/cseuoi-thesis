@@ -151,6 +151,7 @@
 	%\renewcommand{\indexname}{Ευρετήριο}
 	%\renewcommand{\contentsname}{Περιεχόμενα}
 	%\renewcommand{\appendixname}{Παράρτημα}
+	%\renewcommand{\proofname}{Απόδειξη}
 	\floatname{algorithm}{Αλγόριθμος}
 
 	% amsthm
@@ -216,6 +217,7 @@
 	\renewcommand{\indexname}{Index}
 	\renewcommand{\contentsname}{Table of Contents}
 	\renewcommand{\appendixname}{Appendix}
+	\renewcommand{\proofname}{Proof}
 	\floatname{algorithm}{Algorithm}
 
 	% amsthm

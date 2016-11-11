@@ -1,7 +1,7 @@
 cseuoi-thesis
 =============
 
-This is the official XeLaTeX template for Master's theses and Ph.D. dissertations published at the [Department of Computer Science and Engineering, University of Ioannina](http://cse.uoi.gr/en/).
+This is the official XeLaTeX template for Master's theses and Ph.D. dissertations used at the [Department of Computer Science and Engineering, University of Ioannina](http://cse.uoi.gr/).
 
 In order to use this template, you must first install a TeX distribution.
 For example, you can install [TeX Live](https://www.tug.org/texlive/) on Ubuntu using the command ```sudo apt-get install texlive-full```.

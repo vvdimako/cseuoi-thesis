@@ -121,6 +121,9 @@
 	\newcommand{\csedimosieuseis}{Δημοσιεύσεις Συγγραφέα}
 	\newcommand{\cseviografiko}{Σύντομο Βιογραφικό}
 	\newcommand{\cseparartima}{Παράρτημα}
+	
+	\newcommand{\advisoryname}{Συμβουλευτική Επιτροπή}
+	\newcommand{\examiningname}{Εξεταστική Επιτροπή}
 
 	% Σελίδα περίληψης
 	\newcommand{\cseabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}
@@ -187,6 +190,9 @@
 	\newcommand{\csedimosieuseis}{Author's Publications}
 	\newcommand{\cseviografiko}{Short Biography}
 	\newcommand{\cseparartima}{Appendix}
+
+	\newcommand{\advisoryname}{Advisory Committee}
+	\newcommand{\examiningname}{Examining Committee}
 
 	% Σελίδα περίληψης
 	\newcommand{\cseabstractdpt}{Department of Computer Science and Engineering, University of Ioannina, Greece}
@@ -296,6 +302,8 @@
 \fi
 
 
+\makeatletter
+
 % Δημιουργία της σελίδας τίτλου
 \renewcommand{\maketitle}{
 	% Ρύθμιση του πακέτου hyperref
@@ -320,8 +328,6 @@
 
 % Δημιουργία της σελίδας τίτλου στα Ελληνικά
 \newcommand{\makegreektitle}{
-    \makeatletter
-
     {\LARGE \@titleGr}
 
     {\Large
@@ -354,16 +360,12 @@
        
                         \@dateGr\par
     }
-
-    \makeatother
     \clearpage
 }
 
 
 % Δημιουργία της σελίδας τίτλου στα Αγγλικά
 \newcommand{\makeenglishtitle}{
-    \makeatletter
-
     {\LARGE \@titleEn}
 
     {\Large
@@ -394,19 +396,58 @@
         
                         \@dateEn\par
     }
-
-    \makeatother
     \clearpage
 }
 
 
+% Δημιουργία της σελίδας με τις επιτροπές
+\newcommand{\makecommittees}{%
+  \ifPhD
+    \noindent\advisoryname:
+    \begin{itemize}
+      \item \@advi
+      \item \@advii
+      \item \@adviii
+    \end{itemize}
+    \vskip\baselineskip
+    \noindent\examiningname:
+    \begin{itemize}
+      \item \@exami
+      \item \@examii
+      \item \@examiii
+      \item \@examiv
+      \item \@examv
+      \item \@examvi
+      \item \@examvii
+    \end{itemize}
+  \else
+    \noindent\examiningname:
+    \begin{itemize}
+      \item \@mexami
+      \item \@mexamii
+      \item \@mexamiii
+    \end{itemize}
+  \fi
+  \clearpage
+}
+
+% Macros to produce the committee lists
+\newcounter{@advctr}\setcounter{@advctr}{1}
+\newcounter{@exmctr}\setcounter{@exmctr}{1}
+\newcounter{@mexmctr}\setcounter{@mexmctr}{1}
+\def\PHDadvisory#1#2#3{\expandafter\gdef\csname @adv\roman{@advctr}\endcsname%
+    {\textbf{#1}, #2, #3}\addtocounter{@advctr}{1}}
+\def\PHDexaminer#1#2#3{\expandafter\gdef\csname @exam\roman{@exmctr}\endcsname%
+    {\textbf{#1}, #2, #3}\addtocounter{@exmctr}{1}}
+\def\MSCexaminer#1#2#3{\expandafter\gdef\csname @mexam\roman{@mexmctr}\endcsname%
+    {\textbf{#1}, #2, #3}\addtocounter{@mexmctr}{1}}
+
+ 
 % Δημιουργία της κεφαλίδας για την περίληψη
 \newcommand{\makecseabstract}{
-	\makeatletter
 	\@author, \cseabstracttype\ifPhD\else\ \cseabstractcs\fi, \cseabstractdpt, \@date.\\
 	\@title.\\
 	\cseabstractsup: \advisor.
-	\makeatother
 
 	\bigskip
 	\bigskip
@@ -415,11 +456,9 @@
 
 % Δημιουργία της κεφαλίδας για την εκτεταμένη περίληψη
 \newcommand{\makecseextabstract}{
-	\makeatletter
 	\authorBilingual, \cseextabstracttype\ifPhD\else\ \cseextabstractcs\fi, \cseextabstractdpt, \dateBilingual.\\
 	\titleBilingual.\\
 	\cseextabstractsup: \advisorBilingual.
-	\makeatother
 
 	\bigskip
 	\bigskip
@@ -477,6 +516,9 @@
     \nobreak
     \vskip 40\p@
   }}
+
+
+\makeatother
 
 % end of file:
 \endinput

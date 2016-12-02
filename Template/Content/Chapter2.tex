@@ -215,21 +215,21 @@ To πακέτο \texttt{xgreek}\footnote{\url{https://www.ctan.org/pkg/xgreek?la
  \begin{algorithmic}[1]
   \REQUIRE $n \geq 0 \vee x \neq 0$
   \ENSURE $y = x^n$
-  \STATE $y \Leftarrow 1$
+  \STATE $y \leftarrow 1$
   \IF{$n < 0$}
-  \STATE $X \Leftarrow 1 / x$
-  \STATE $N \Leftarrow -n$
+  \STATE $X \leftarrow 1 / x$
+  \STATE $N \leftarrow -n$
   \ELSE
-  \STATE $X \Leftarrow x$
-  \STATE $N \Leftarrow n$
+  \STATE $X \leftarrow x$
+  \STATE $N \leftarrow n$
   \ENDIF
   \WHILE{$N \neq 0$}
   \IF{$N$ is even}
-  \STATE $X \Leftarrow X \times X$
-  \STATE $N \Leftarrow N / 2$
+  \STATE $X \leftarrow X \times X$
+  \STATE $N \leftarrow N / 2$
   \ELSE[$N$ is odd]
-  \STATE $y \Leftarrow y \times X$
-  \STATE $N \Leftarrow N - 1$
+  \STATE $y \leftarrow y \times X$
+  \STATE $N \leftarrow N - 1$
   \ENDIF
   \ENDWHILE
  \end{algorithmic}
@@ -242,21 +242,21 @@ To πακέτο \texttt{xgreek}\footnote{\url{https://www.ctan.org/pkg/xgreek?la
 	\begin{algorithmic}[1]
 		\REQUIRE $n \geq 0 \vee x \neq 0$
 		\ENSURE $y = x^n$
-		\STATE $y \Leftarrow 1$
+		\STATE $y \leftarrow 1$
 		\IF{$n < 0$}
-		\STATE $X \Leftarrow 1 / x$
-		\STATE $N \Leftarrow -n$
+		\STATE $X \leftarrow 1 / x$
+		\STATE $N \leftarrow -n$
 		\ELSE
-		\STATE $X \Leftarrow x$
-		\STATE $N \Leftarrow n$
+		\STATE $X \leftarrow x$
+		\STATE $N \leftarrow n$
 		\ENDIF
 		\WHILE{$N \neq 0$}
 		\IF{$N$ is even}
-		\STATE $X \Leftarrow X \times X$
-		\STATE $N \Leftarrow N / 2$
+		\STATE $X \leftarrow X \times X$
+		\STATE $N \leftarrow N / 2$
 		\ELSE[$N$ is odd]
-		\STATE $y \Leftarrow y \times X$
-		\STATE $N \Leftarrow N - 1$
+		\STATE $y \leftarrow y \times X$
+		\STATE $N \leftarrow N - 1$
 		\ENDIF
 		\ENDWHILE
 	\end{algorithmic}

@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{cseuoi-thesis}[2016/03/02 v2.0 Official MSc and PhD (Xe)LaTeX thesis template for the CSE Department, University of Ioannina]
+\ProvidesClass{cseuoi-thesis}[2019/03/02 v3.0 Official MSc and PhD in engineering (Xe)LaTeX thesis template for the CSE Department, University of Ioannina]
 
 % Ελληνικά ή Αγγλικά
 \newif\ifgreek
@@ -11,29 +11,17 @@
 \DeclareOption{msc}{\PhDfalse}
 \DeclareOption{phd}{\PhDtrue}
 
-% Εξειδίκευση (μόνο για Μεταπτυχιακό)
-\newcommand{\ekseidikseusiGr}{\colorbox{gray}{ΣΤΑ ΥΠΟΛΟΓΙΣΤΙΚΑ ΣΥΣΤΗΜΑΤΑ}}
-\newcommand{\ekseidikseusiEn}{\colorbox{gray}{IN COMPUTER SYSTEMS}}
+% Ειδίκευση (μόνο για Μεταπτυχιακό)
+\newcommand{\ekseidikseusiGr}{\colorbox{gray}{ΣΤΑ ΠΡΟΗΓΜΕΝΑ ΥΠΟΛΟΓΙΣΤΙΚΑ ΣΥΣΤΗΜΑΤΑ}}
+\newcommand{\ekseidikseusiEn}{\colorbox{gray}{IN ADVANCED COMPUTER SYSTEMS}}
 
 \DeclareOption{systems}{
-	\renewcommand{\ekseidikseusiGr}{ΣΤΑ ΥΠΟΛΟΓΙΣΤΙΚΑ ΣΥΣΤΗΜΑΤΑ}
-	\renewcommand{\ekseidikseusiEn}{IN COMPUTER SYSTEMS}
+	\renewcommand{\ekseidikseusiGr}{ΣΤΑ ΠΡΟΗΓΜΕΝΑ ΥΠΟΛΟΓΙΣΤΙΚΑ ΣΥΣΤΗΜΑΤΑ}
+	\renewcommand{\ekseidikseusiEn}{IN ADVANCED COMPUTER SYSTEMS}
 }
-\DeclareOption{theory}{
-	\renewcommand{\ekseidikseusiGr}{ΣΤΗ ΘΕΩΡΙΑ ΕΠΙΣΤΗΜΗΣ ΥΠΟΛΟΓΙΣΤΩΝ}
-	\renewcommand{\ekseidikseusiEn}{IN COMPUTER SCIENCE THEORY}
-}
-\DeclareOption{software}{
-	\renewcommand{\ekseidikseusiGr}{ΣΤΟ ΛΟΓΙΣΜΙΚΟ}
-	\renewcommand{\ekseidikseusiEn}{IN SOFTWARE}
-}
-\DeclareOption{scicomp}{
-	\renewcommand{\ekseidikseusiGr}{ΣΤΟΥΣ ΕΠΙΣΤΗΜΟΝΙΚΟΥΣ ΥΠΟΛΟΓΙΣΜΟΥΣ}
-	\renewcommand{\ekseidikseusiEn}{IN SCIENTIFIC COMPUTING}
-}
-\DeclareOption{techapps}{
-	\renewcommand{\ekseidikseusiGr}{ΣΤΙΣ ΤΕΧΝΟΛΟΓΙΕΣ - ΕΦΑΡΜΟΓΕΣ}
-	\renewcommand{\ekseidikseusiEn}{IN TECHNOLOGIES - APPLICATIONS}
+\DeclareOption{data}{
+	\renewcommand{\ekseidikseusiGr}{ΣΤΗΝ ΕΠΙΣΤΗΜΗ ΚΑΙ ΜΗΧΑΝΙΚΗ ΔΕΔΟΜΕΝΩΝ}
+	\renewcommand{\ekseidikseusiEn}{TODO - IN DATA SCIENCE AND ENGINEERING}
 }
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
@@ -128,16 +116,16 @@
 	% Σελίδα περίληψης
 	\newcommand{\cseabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}
 	\newcommand{\cseabstractsup}{Επιβλέπων}
-	\newcommand{\cseabstractcs}{στην Πληροφορική}
+	\newcommand{\cseabstractcs}{στην Μηχανική Δεδομένων και Υπολογιστικών Συστημάτων}
 	\ifPhD
 		\newcommand{\cseabstracttype}{Δ.Δ.}
 		\newcommand{\cseextabstracttype}{Ph.D.}
 	\else
-		\newcommand{\cseabstracttype}{Μ.Δ.Ε.}
+		\newcommand{\cseabstracttype}{Δ.Μ.Σ.}  % changed to Διπλωμα Μεταπτυχιακών Σπουδών
 		\newcommand{\cseextabstracttype}{M.Sc.}
 	\fi
 	\newcommand{\cseextabstract}{Extended Abstract}
-	\newcommand{\cseextabstractcs}{in Computer Science}
+	\newcommand{\cseextabstractcs}{in TODO Data and Systems Engineering TODO}
 	\newcommand{\cseextabstractsup}{Advisor}
 	\newcommand{\cseextabstractdpt}{Department of Computer Science and Engineering, University of Ioannina, Greece}
 
@@ -197,16 +185,16 @@
 	% Σελίδα περίληψης
 	\newcommand{\cseabstractdpt}{Department of Computer Science and Engineering, University of Ioannina, Greece}
 	\newcommand{\cseabstractsup}{Advisor}
-	\newcommand{\cseabstractcs}{in Computer Science}
+	\newcommand{\cseabstractcs}{in TODO Data and Systems Engineering TODO}
 	\ifPhD
 		\newcommand{\cseabstracttype}{Ph.D.}
 		\newcommand{\cseextabstracttype}{Δ.Δ.}
 	\else
 		\newcommand{\cseabstracttype}{M.Sc.}
-		\newcommand{\cseextabstracttype}{Μ.Δ.Ε.}
+		\newcommand{\cseextabstracttype}{Δ.Μ.Σ.}   % ΔΜΣ
 	\fi
 	\newcommand{\cseextabstract}{Εκτεταμένη Περίληψη}
-	\newcommand{\cseextabstractcs}{στην Πληροφορική}
+	\newcommand{\cseextabstractcs}{στην Μηχανική Δεδομένων και Υπολογιστικών Συστημάτων}
 	\newcommand{\cseextabstractsup}{Επιβλέπων}
 	\newcommand{\cseextabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}
 
@@ -256,8 +244,8 @@
 	\newcommand{\csethesisTypeEn}{Dissertation}
 	\newcommand{\csediplwmaEn}{Doctor of Philosophy}
 \else
-	\newcommand{\csethesisTypeGr}{Μεταπτυχιακή Εργασία Εξειδίκευσης}
-	\newcommand{\csediplwmaGr}{Μεταπτυχιακού Διπλώματος Ειδίκευσης}
+	\newcommand{\csethesisTypeGr}{Μεταπτυχιακή Διπλωματική Εργασία}
+	\newcommand{\csediplwmaGr}{Διπλώματος Μεταπτυχιακών Σπουδών}
 	\newcommand{\csethesisTypeEn}{Thesis}
 	\newcommand{\csediplwmaEn}{Master of Science}
 \fi
@@ -335,7 +323,7 @@
 
         \vfill          υποβάλλεται στην ορισθείσα
 
-                        από τη Γενική Συνέλευση Ειδικής Σύνθεσης
+                        από την Συνέλευση
 
                         του Τμήματος Μηχανικών Η/Υ και Πληροφορικής
 
@@ -349,9 +337,9 @@
 
         \vfill          \MakeUppercase{\csediplwmaGr}
 
-        \ifPhD\else     ΣΤΗΝ ΠΛΗΡΟΦΟΡΙΚΗ
+        \ifPhD\else     ΣΤΗΝ ΜΗΧΑΝΙΚΗ ΔΕΔΟΜΕΝΩΝ ΚΑΙ ΥΠΟΛΟΓΙΣΤΙΚΩΝ ΣΥΣΤΗΜΑΤΩΝ
 
-        \vspace{1em}    ΜΕ ΕΞΕΙΔΙΚΕΥΣΗ
+        \vspace{1em}    ΜΕ ΕΙΔΙΚΕΥΣΗ
 
                         \ekseidikseusiGr
         \fi
@@ -373,7 +361,7 @@
 
         \vfill          submitted to the designated
 
-                        by the General Assembly of Special Composition
+                        by the General Assembly
 
                         of the Department of Computer Science and Engineering
 
@@ -385,7 +373,7 @@
 
         \vfill          in partial fulfillment of the requirements for the degree of
 
-        \vfill          \MakeUppercase{\csediplwmaEn}\ifPhD\else\ IN COMPUTER SCIENCE
+        \vfill          \MakeUppercase{\csediplwmaEn}\ifPhD\else\ IN TODO DATA AND SYSTEMS ENGINEERING TODO
 
         \vspace{1em}    WITH SPECIALIZATION
 

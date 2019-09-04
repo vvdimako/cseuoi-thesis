@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{cseuoi-thesis}[2019/03/02 v3.0 Official MSc and PhD in engineering (Xe)LaTeX thesis template for the CSE Department, University of Ioannina]
+\ProvidesClass{cseuoi-thesis}[2019/09/04 v3.0 Official MSc and PhD (Xe)LaTeX thesis template for the CSE Department, University of Ioannina]
 
 % Ελληνικά ή Αγγλικά
 \newif\ifgreek
@@ -21,13 +21,13 @@
 }
 \DeclareOption{data}{
 	\renewcommand{\ekseidikseusiGr}{ΣΤΗΝ ΕΠΙΣΤΗΜΗ ΚΑΙ ΜΗΧΑΝΙΚΗ ΔΕΔΟΜΕΝΩΝ}
-	\renewcommand{\ekseidikseusiEn}{TODO - IN DATA SCIENCE AND ENGINEERING}
+	\renewcommand{\ekseidikseusiEn}{IN DATA SCIENCE AND ENGINEERING}
 }
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 
-% Ορίζουμε ως προεπιλογή Ελληνικά και Διδακτορικό
-\ExecuteOptions{gr,phd}
+% Ορίζουμε ως προεπιλογή Αγγλικά και Διδακτορικό
+\ExecuteOptions{en,phd}
 
 \ProcessOptions\relax
 
@@ -114,9 +114,9 @@
 	\newcommand{\examiningname}{Εξεταστική Επιτροπή}
 
 	% Σελίδα περίληψης
-	\newcommand{\cseabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}
+	\newcommand{\cseabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πολυτεχνική Σχολή, Πανεπιστήμιο Ιωαννίνων}
 	\newcommand{\cseabstractsup}{Επιβλέπων}
-	\newcommand{\cseabstractcs}{στην Μηχανική Δεδομένων και Υπολογιστικών Συστημάτων}
+	\newcommand{\cseabstractcs}{στη Μηχανική Δεδομένων και Υπολογιστικών Συστημάτων}
 	\ifPhD
 		\newcommand{\cseabstracttype}{Δ.Δ.}
 		\newcommand{\cseextabstracttype}{Ph.D.}
@@ -125,9 +125,10 @@
 		\newcommand{\cseextabstracttype}{M.Sc.}
 	\fi
 	\newcommand{\cseextabstract}{Extended Abstract}
-	\newcommand{\cseextabstractcs}{in TODO Data and Systems Engineering TODO}
+	\newcommand{\cseextabstractcs}{in Data and Computer Systems Engineering}
 	\newcommand{\cseextabstractsup}{Advisor}
-	\newcommand{\cseextabstractdpt}{Department of Computer Science and Engineering, University of Ioannina, Greece}
+	\newcommand{\cseextabstractdpt}{Department of Computer Science and Engineering, 
+	                                School of Engineering, University of Ioannina, Greece}
 
 	% xgreek
 	%\renewcommand{\chaptername}{Κεφάλαιο}
@@ -183,9 +184,10 @@
 	\newcommand{\examiningname}{Examining Committee}
 
 	% Σελίδα περίληψης
-	\newcommand{\cseabstractdpt}{Department of Computer Science and Engineering, University of Ioannina, Greece}
+	\newcommand{\cseabstractdpt}{Department of Computer Science and Engineering, 
+	                             School of Engineering, University of Ioannina, Greece}
 	\newcommand{\cseabstractsup}{Advisor}
-	\newcommand{\cseabstractcs}{in TODO Data and Systems Engineering TODO}
+	\newcommand{\cseabstractcs}{in Data and Computer Systems Engineering}
 	\ifPhD
 		\newcommand{\cseabstracttype}{Ph.D.}
 		\newcommand{\cseextabstracttype}{Δ.Δ.}
@@ -194,9 +196,9 @@
 		\newcommand{\cseextabstracttype}{Δ.Μ.Σ.}   % ΔΜΣ
 	\fi
 	\newcommand{\cseextabstract}{Εκτεταμένη Περίληψη}
-	\newcommand{\cseextabstractcs}{στην Μηχανική Δεδομένων και Υπολογιστικών Συστημάτων}
+	\newcommand{\cseextabstractcs}{στη Μηχανική Δεδομένων και Υπολογιστικών Συστημάτων}
 	\newcommand{\cseextabstractsup}{Επιβλέπων}
-	\newcommand{\cseextabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}
+	\newcommand{\cseextabstractdpt}{Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πολυτεχνική Σχολή, Πανεπιστήμιο Ιωαννίνων}
 
 	% xgreek
 	\renewcommand{\chaptername}{Chapter}
@@ -337,7 +339,7 @@
 
         \vfill          \MakeUppercase{\csediplwmaGr}
 
-        \ifPhD\else     ΣΤΗΝ ΜΗΧΑΝΙΚΗ ΔΕΔΟΜΕΝΩΝ ΚΑΙ ΥΠΟΛΟΓΙΣΤΙΚΩΝ ΣΥΣΤΗΜΑΤΩΝ
+        \ifPhD\else     ΣΤΗ ΜΗΧΑΝΙΚΗ ΔΕΔΟΜΕΝΩΝ ΚΑΙ ΥΠΟΛΟΓΙΣΤΙΚΩΝ ΣΥΣΤΗΜΑΤΩΝ
 
         \vspace{1em}    ΜΕ ΕΙΔΙΚΕΥΣΗ
 
@@ -373,7 +375,7 @@
 
         \vfill          in partial fulfillment of the requirements for the degree of
 
-        \vfill          \MakeUppercase{\csediplwmaEn}\ifPhD\else\ IN TODO DATA AND SYSTEMS ENGINEERING TODO
+        \vfill          \MakeUppercase{\csediplwmaEn}\ifPhD\else\ IN DATA AND COMPUTER SYSTEMS ENGINEERING
 
         \vspace{1em}    WITH SPECIALIZATION
 
@@ -461,7 +463,7 @@
 {section}%                   % the name
 {1}%                         % the level
 {0mm}%                       % the indent
-{-2\baselineskip}%            % the before skip
+{-2\baselineskip}%           % the before skip
 {0.5\baselineskip}%          % the after skip
 {\normalfont\large\bf}} % the style
 
@@ -475,12 +477,12 @@
     %\hrule                                           % horizontal line
     \vspace{5pt}%                                    % add some vertical space
     \ifnum \c@secnumdepth >\m@ne
-        \huge\scshape \leftline{\@chapapp\space \thechapter}    % Chapter followed by number
+        {\huge\scshape \leftline{\@chapapp\space \thechapter}}    % Chapter followed by number
         \par\nobreak
-        \vskip 20\p@
+        %\vskip 5\p@
     \fi
     \interlinepenalty\@M
-    \Huge \scshape \begin{flushright}#1\end{flushright}\par                            % chapter title
+    {\Huge\scshape \begin{flushright}#1\end{flushright}}\par                            % chapter title
     \vspace{5pt}%                                    % add some vertical space
     %\hrule                                           % horizontal rule
     \nobreak

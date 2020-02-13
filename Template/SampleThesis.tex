@@ -2,7 +2,7 @@
 % Περάστε στο πακέτο cseuoi-thesis τις κατάλληλες επιλογές για τη διατριβή σας
 % (γλώσσα, είδος διατριβής και, αν απαιτείται, εξειδίκευση)
 %
-\documentclass[gr,msc,systems]{cseuoi-thesis}
+\documentclass[gr,msc,sys]{cseuoi-thesis}
 %\documentclass[en,phd]{cseuoi-thesis} % Διδακτορικό (στα Αγγλικά)
 %\documentclass[gr,phd]{cseuoi-thesis} % Διδακτορικό (στα Ελληνικά)
 %\documentclass[en,msc,systems]{cseuoi-thesis} % Μεταπτυχιακό με ειδίκευση στα Προηγμένα Υπολογιστικά Συστήματα (στα Αγγλικά)
@@ -50,6 +50,29 @@
 \PHDexaminer{Πέτρος Πέτρου}{Αναπλ.\ Καθηγητής}%
     {Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}
 
+
+%\PHDadvisory{Vasilios Vasiliou}{Assist.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+%\PHDadvisory{Georgios Georgiou}{Assoc.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+%\PHDadvisory{Dimitrios Dimitriou}{Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+%% 7μελής εξεταστική επιτροπή
+%\PHDexaminer{Antonios Antoniou}{Assoc.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+%\PHDexaminer{Vasilios Vasiliou}{Assist.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+%\PHDexaminer{Georgios Georgiou}{Assoc.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+%\PHDexaminer{Dimitrios Dimitriou}{Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+%\PHDexaminer{Ioannis Ioannou}{Assoc.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+%\PHDexaminer{Nikolaos Nikolaou}{Assoc.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+%\PHDexaminer{Petros Petrou}{Assoc.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+
 % 
 % Εξεταστική επιτροπή για ΜΔΕ
 %
@@ -60,6 +83,13 @@
 \MSCexaminer{Γεώργιος Γεωργίου}{Αναπλ.\ Καθηγητής}%
     {Τμήμα Μηχανικών Η/Υ και Πληροφορικής, Πανεπιστήμιο Ιωαννίνων}
 
+%\MSCexaminer{Antonios Antoniou}{Assoc.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina (Advisor)}
+%\MSCexaminer{Vasilios Vasiliou}{Assist.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+%\MSCexaminer{Georgios Georgiou}{Assoc.\ Professor}%
+%    {Department of Computer Science and Engineering, University of Ioannina}
+
 
 % Πακέτο για την εμφάνιση περιθωρίων (χρήσιμο για την εύρεση overfull boxes)
 %\usepackage{showframe}
@@ -67,11 +97,8 @@
 % Πακέτο για τη διατήρηση των floats (εικόνες κ.α.) εντός των ενοτήτων
 %\usepackage[section]{placeins}
 
-% AE: testing
-%\makeatletter
-%\newcommand\thefontsize[1]{{#1 THE CURRENT fpont size is: \f@size pt\par}}
-%\makeatother
-\usepackage[grid, texcoord, gridunit=pt, gridcolor=blue!40, subgridcolor=blue!20]{eso-pic}
+% AE: Πακέτο για grid
+%\usepackage[grid, texcoord, gridunit=pt, gridcolor=blue!40, subgridcolor=blue!20]{eso-pic}
 
 \begin{document}
 
@@ -127,7 +154,9 @@
 
 % Εισαγωγή της βιβλιογραφίας
 \addstarredchapterc{\bibname} % minitoc
-\bibliographystyle{ieeetr}
+% Aris: I hear that ieeetr is outdated.
+%\bibliographystyle{ieeetr}
+\bibliographystyle{IEEEtran}
 \bibliography{Content/Bibliography}
 
 % Προαιρετικά, μπορείτε να εισάγετε παραρτήματα

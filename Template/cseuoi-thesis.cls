@@ -335,7 +335,7 @@
 
         \vfill          υποβάλλεται στην ορισθείσα
 
-                        από τη Γενική Συνέλευση Ειδικής Σύνθεσης
+                        από την Συνέλευση 
 
                         του Τμήματος Μηχανικών Η/Υ και Πληροφορικής
 
@@ -373,7 +373,7 @@
 
         \vfill          submitted to the designated
 
-                        by the General Assembly of Special Composition
+                        by the General Assembly
 
                         of the Department of Computer Science and Engineering
 

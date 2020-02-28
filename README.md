@@ -23,6 +23,8 @@ The pdf output can be seen in templateMSW16.pdf.
 
 Note that the provided Word template is not 100% compliant to the cseuoi-thesis template and requires some manual modification. It is up to the author to make the necessary changes on their own.
 Moreover, it is provided only for the MSc in Data and Computer Systems Engineering and in the Greek language.
+**It may also be used for the MSc in Computer Science by making some modifications in the cover and abstact (in both Greek and English).
+An example is shown in file CS_MSC_SYS_GR.pdf (see the highlighted parts).**
 
 In general, formating long complicated documents in Word is very fragile and small modifications can make a large difference in the appearence of the document.
 Be very carefull on where you click and type. Even hitting undo cannot restore it back in its previous form in some cases.

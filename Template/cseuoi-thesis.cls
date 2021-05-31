@@ -325,7 +325,7 @@
 
         \vfill          υποβάλλεται στην ορισθείσα
 
-                        από την Συνέλευση
+                        από τη Συνέλευση
 
                         του Τμήματος Μηχανικών Η/Υ και Πληροφορικής
 
@@ -346,9 +346,10 @@
                         \ekseidikseusiGr
         \fi
 
-        \vfill \vfill   Πανεπιστήμιο Ιωαννίνων
+        \vfill \vfill   Πανεπιστήμιο Ιωαννίνων\\
+                        Πολυτεχνική Σχολή
        
-                        \@dateGr\par
+                        Ιωάννινα \@dateGr\par
     }
     \clearpage
 }
@@ -363,7 +364,7 @@
 
         \vfill          submitted to the designated
 
-                        by the General Assembly
+                        by the Assembly
 
                         of the Department of Computer Science and Engineering
 
@@ -382,9 +383,10 @@
                         \ekseidikseusiEn
         \fi
 
-        \vfill \vfill   University of Ioannina
+        \vfill \vfill   University of Ioannina\\
+                        School of Engineering
         
-                        \@dateEn\par
+                        Ioannina \@dateEn\par
     }
     \clearpage
 }
